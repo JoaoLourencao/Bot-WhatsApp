@@ -92,7 +92,7 @@ conn.on('message-new', async(m) =>
 
 //fitur
 if (text.includes('.Seberapabucin')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".seberapabucin")){
 const teks = text.replace(/.seberapabucin /, "")
@@ -104,7 +104,7 @@ axios.get(`https://arugaz.herokuapp.com/api/howbucins`).then((res) => {
 
   //Zodiak
 if (text.includes('.Zodiak')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".zodiak")){
 const teks = text.replace(/.zodiak /, "")
@@ -116,14 +116,14 @@ axios.get(`https://api.vhtear.com/zodiak?query=${teks}&apikey=${apivhtear}`).the
 
   //Tebakgambar
 if (text.includes('.Tebakgambar')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".tebakgambar")){
 axios.get(`https://api.vhtear.com/tebakgambar&apikey=${apivhtear}`).then((res) => {
     imageToBase64(res.data.result.soalImg)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Menulis ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+            conn.sendMessage(id, '[ WAIT ] Escreva ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
         })
@@ -132,7 +132,7 @@ axios.get(`https://api.vhtear.com/tebakgambar&apikey=${apivhtear}`).then((res) =
 
   //Familly100
 if (text.includes('.Family100')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".family100")){
 axios.get(`https://api.vhtear.com/family100&apikey=${apivhtear}`).then((res) => {
@@ -143,7 +143,7 @@ axios.get(`https://api.vhtear.com/family100&apikey=${apivhtear}`).then((res) => 
 
   //Artimimpi
 if (text.includes('.Mimpi')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".mimpi")){
 const teks = text.replace(/.mimpi /, "")
@@ -155,7 +155,7 @@ axios.get(`https://api.vhtear.com/artimimpi?query=${teks}&apikey=${apivhtear}`).
 
  //Brainly 
 if (text.includes('.Brainly')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.brainly')){
 const teks = text.replace(/.brainly /, "")
@@ -166,7 +166,7 @@ axios.get(`https://api.vhtear.com/branly?query=${teks}&apikey=${apivhtear}`).the
 }
   //How gay
 if (text.includes('.Seberapagay')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".seberapagay")){
 const teks = text.replace(/.seberapagay /, "")
@@ -178,7 +178,7 @@ axios.get(`https://arugaz.herokuapp.com/api/howgay`).then((res) => {
 
  //Info owner
 if (text.includes('.Owner')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.owner')){
 conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: m } )
@@ -186,7 +186,7 @@ conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact, {
 
   //Ganti nama grup
 if (text.includes('.Setname')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".setname")){
 const teks = text.replace(/.setname /, "")
@@ -199,7 +199,7 @@ conn.sendMessage(id, 'Sukses mengganti Nama Group' ,MessageType.text, { quoted: 
 
   //Ganti deskripsi grup
 if (text.includes('.Setdesc')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".setdesc")){
 const teks = text.replace(/.setdesc /, "")
@@ -212,7 +212,7 @@ conn.sendMessage(id, 'Sukses mengganti deskripsi grup' ,MessageType.text, { quot
 
 //buka gc
 if (text.includes('.Opengc')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 else if (text == '.opengc'){
 let hasil = `${id.split("@s.whatsapp.net")[0]}`;
@@ -222,7 +222,7 @@ conn.sendMessage(id, 'Hai' ,MessageType.text);
 
 //tutup gc
 if (text.includes('.Closegc')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 
 }
 else if (text == '.closegc'){
@@ -234,7 +234,7 @@ conn.sendMessage(id, 'Done, Tutup dulu yah' ,MessageType.text);
 
   //Map
 if (text.includes('.Map')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.map')){
   var teks = text.replace(/.map /, '')
@@ -252,7 +252,7 @@ if (text.includes('.map')){
 
   //Tag
 if (text.includes('.Tagme')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.tagme')) {
  var nomor = m.participant
@@ -265,7 +265,7 @@ if (text.includes('.tagme')) {
 
   //Get ping
 if (text.includes('.Ping')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 else if (text == '.ping') {
 const timestamp = speed();
@@ -275,7 +275,7 @@ conn.sendMessage(id, `PONG!!\n_Speed : ${latensi.toFixed(4)} Second_`, MessageTy
 
   //Nulis dibuku
 if (text.includes('.Nulis')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.nulis')){
   const teks = text.replace(/.nulis /, '')
@@ -284,7 +284,7 @@ if (text.includes('.nulis')){
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Menulis ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+            conn.sendMessage(id, '[ WAIT ] Escreva ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf ,MessageType.image, { quoted: m } )
         })
@@ -292,7 +292,7 @@ if (text.includes('.nulis')){
 }
   //Pengucapan ulang
 if (text.includes('.Say')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".say")){
   const teks = text.replace(/.say /, "")
@@ -300,76 +300,76 @@ conn.sendMessage(id, teks, MessageType.text)
 }
   //Youtube download 
 if (text.includes('.Ytmp4')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ytmp4')){
 const teks = text.replace(/.ytmp4 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Mendownload...⏳ silahkan tunggu', MessageType.text, {quoted: m } )
-    let hasil = `Klik link dan download hasilnya️\n*Judul* : ${res.data.title}\n*Ukuran* : ${res.data.filesize}\n*Format* : MP4\n*Link* : ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Download...⏳ Por favor, aguarde', MessageType.text, {quoted: m } )
+    let hasil = `Clique no link e baixe os resultados️\n*Judul* : ${res.data.title}\n*Ukuran* : ${res.data.filesize}\n*Format* : MP4\n*Link* : ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 
 if (text.includes('.Ytmp3')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ytmp3')){
 const teks = text.replace(/.ytmp3 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
-    conn.sendMessage(id, '[ WAIT ] Mendownload...⏳ silahkan tunggu', MessageType.text, { quoted: m } )
-    let hasil = `Klik link dan download hasilnya\n*Judul* : ${res.data.title}\n*Ukuran video* : ${res.data.filesize}\n*Format* : MP3\n*Link* : ${res.data.result}`;
+    conn.sendMessage(id, '[ WAIT ] Download...⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
+    let hasil = `Clique no link e baixe os resultados\n*Judul* : ${res.data.title}\n*Ukuran video* : ${res.data.filesize}\n*Format* : MP3\n*Link* : ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 
   //Instagram download
 if (text.includes('.Ig')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ig')){
 const teks = text.replace(/.ig /, "")
 axios.get(`https://mhankbarbars.herokuapp.com/api/ig?url=${teks}&apiKey=${apibarbar}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Mendownload...⏳ silahkan tunggu', MessageType.text, { quoted: m } )
-    let hasil = `Klik link dan download hasilnya!\n*Link* : ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Download...⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
+    let hasil = `Clique no link e baixe os resultados!\n*Link* : ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 
   //Facebook download
 if (text.includes('.Fb')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.fb')){
 const teks = text.replace(/.fb /, "")
 axios.get(`https://api.vhtear.com/fbdl?link=${teks}&apikey=${apivhtear}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Mendownload...⏳ silahkan tunggu', MessageType.text, { quoted: m } )
-    let hasil = `Klik link dan download hasilnya!\n*Judul* : ${res.data.title}\n*Link* : ${res.data.result}`;
+	conn.sendMessage(id, '[ WAIT ] Download...⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
+    let hasil = `Clique no link e baixe os resultados!\n*Judul* : ${res.data.title}\n*Link* : ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 
   //Twitter download
 if (text.includes('.Twt')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.twt')){
 const teks = text.replace(/.twt /, "")
 axios.get(`https://mhankbarbars.herokuapp.com/api/twit?url=${teks}&apiKey=${apibarbar}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Mendownload⏳ silahkan tunggu', MessageType.text, { quoted: m } )
-    let hasil = `Klik link dan download hasilnya!\n*Link* : ${res.data.result}\n*Judul* : ${res.data.title}\n${res.data.quote}`;
+	conn.sendMessage(id, '[ WAIT ] Download⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
+    let hasil = `Clique no link e baixe os resultados!\n*Link* : ${res.data.result}\n*Judul* : ${res.data.title}\n${res.data.quote}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 
   //Pencarian wiki
 if (text.includes('.Wiki')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".wiki")){
 const teks = text.replace(/.wiki /, "")
 axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching...⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching...⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `Menurut Wikipedia:\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
@@ -377,12 +377,12 @@ axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => 
 
   //Jadwan sholat daerah
 if (text.includes('.Sholat')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".sholat")){
   const teks = text.replace(/.sholat /, "")
   axios.get(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${teks}`).then ((res) =>{
-  conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal sholat⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+  conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal sholat⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
   let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n*Imsyak* : ${res.data.imsyak} WIB\n*Subuh* : ${res.data.subuh} WIB\n*Dzuhur* : ${res.data.dzuhur} WIB\n*Ashar* : ${res.data.ashar} WIB\n*Maghrib* : ${res.data.maghrib} WIB\n*Isya* : ${res.data.isha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text, { quoted: m } );
 })
@@ -461,7 +461,7 @@ if (text.includes(".sholat")){
 
   //Info convid
 if (text.includes('.Covid')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".covid"))
    {
@@ -478,7 +478,7 @@ const get = require('got')
 
   //Random foto cewe
 if (text.includes('.Cecan')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
    if (text.includes(".cecan"))
    {
@@ -493,7 +493,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
         imageToBase64(cewek) // Path to the image
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching cecan⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching cecan⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); // Ta-da	
     conn.sendMessage(id, buf ,MessageType.image, { caption: `nih gan`, quoted: m } )
        
@@ -510,7 +510,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 
   //Random foto cowo
 if (text.includes('.Cogan')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
    if (text.includes(".cogan"))
    {
@@ -525,7 +525,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
         imageToBase64(cowok) 
         .then(
             (response) => {
-  conn.sendMessage(id, '[ WAIT ] Searching cogan⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+  conn.sendMessage(id, '[ WAIT ] Searching cogan⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
   var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf, MessageType.image, { caption: `nih sist`, quoted: m } )
             }
@@ -541,7 +541,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 
   //Random anime
 if (text.includes('.Anime')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".anime"))
    {
@@ -556,7 +556,7 @@ if (text.includes(".anime"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching anime⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching anime⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
     conn.sendMessage(id, buf, MessageType.image, { caption: `wibu lu`, quoted : m } )
             }
@@ -572,7 +572,7 @@ if (text.includes(".anime"))
 
   //Pencarian lirik
 if (text.includes('.Lirik')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".lirik")){
 	const teks = text.split(".lirik")[1]
@@ -584,7 +584,7 @@ if (text.includes(".lirik")){
 }
   //Font bapack
 if (text.includes('.Alay')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
@@ -596,7 +596,7 @@ if (text.includes(".alay")){
 
   //Random memme
 if (text.includes('.Meme')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".meme"))
    {
@@ -611,7 +611,7 @@ if (text.includes(".meme"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching meme⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching meme⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
             }
@@ -626,7 +626,7 @@ if (text.includes(".meme"))
 
   //Random wallpaper
 if (text.includes('.Wp')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".wp"))
    {
@@ -641,7 +641,7 @@ if (text.includes(".wp"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching wallpaper⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching wallpaper⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf, MessageType.image, { quoted : m } )
             }
@@ -656,7 +656,7 @@ if (text.includes(".wp"))
 
   //Random twit
 if (text.includes('.Twit')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".twit"))
    {
@@ -671,7 +671,7 @@ if (text.includes(".twit"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching twitter⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching twitter⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
             }
@@ -699,7 +699,7 @@ if (text.includes(".loli"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
     conn.sendMessage(id, buf ,MessageType.image, { caption: `👉👈`, quoted: m } )
             }
@@ -726,7 +726,7 @@ if (text.includes(".neko"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf ,MessageType.image, { caption: `👉👈`, quoted: m } )
             }
@@ -741,7 +741,7 @@ if (text.includes(".neko"))
 
   //quotes
 if (text.includes('.Quotes')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".quotes"))
    {
@@ -756,7 +756,7 @@ if (text.includes(".quotes"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
               conn.sendMessage(id, buf ,MessageType.image, { caption: `Nih gan`, quoted: m } )
             }
@@ -771,7 +771,7 @@ if (text.includes(".quotes"))
 
   //Pencarian image
 if (text.includes('.Img')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".img"))
    {
@@ -787,7 +787,7 @@ if (text.includes(".img"))
         imageToBase64(nimek) 
         .then(
             (response) => {
-    conn.sendMessage(id, '[ WAIT ] Searching⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
     conn.sendMessage(id, buf ,MessageType.image, { quoted: m } )
             }
@@ -802,7 +802,7 @@ if (text.includes(".img"))
 
   //Stalker instagram
 if (text.includes('.Stalk')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".stalk")){
 const sons = text.replace(/.stalk /, "")
@@ -811,7 +811,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/stalk?username=${sons}`).then (
         .then(
     (ress) => {
     var buf = Buffer.from(ress, 'base64')
-    conn.sendMessage(id, '[ WAIT ] Stalking⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Stalking⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `*>Username* : ${res.data.Username}\n*>Nama* : ${res.data.Name}\n*>Follower* : ${res.data.Jumlah_Followers}\n*>Following* : ${res.data.Jumlah_Following}\n*>Jumlah Post* : ${res.data.Jumlah_Post}\n*>Bio* : ${res.data.Biodata}\n\nFollow : https://www.instagram.com/mrf.zvx/`;
     conn.sendMessage(id, buf ,MessageType.image, { caption: hasil, quoted: m } );
     })
@@ -820,12 +820,12 @@ axios.get(`https://alfians-api.herokuapp.com/api/stalk?username=${sons}`).then (
 
 //Pencarian chord gitar
 if (text.includes('.Chord')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".chord")){
 const teks = text.replace(/.chord /, "")
 axios.get(`https://arugaz.herokuapp.com/api/chord?q=${teks}`).then((res) => {
-    conn.sendMessage(id, '[ WAIT ] Searching chord lagu⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching chord lagu⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `*Judul* : ${teks}\n*chord* : ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
@@ -833,12 +833,12 @@ axios.get(`https://arugaz.herokuapp.com/api/chord?q=${teks}`).then((res) => {
 
   //Informasi anime
 if (text.includes('.Infonime')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infonime")){
 const sons = text.replace(/.infonime /, "")
 axios.get(`https://arugaz.herokuapp.com/api/kuso?q=${sons}`).then ((res) =>{
-    conn.sendMessage(id, '[ WAIT ] Searching info anime⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Searching info anime⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `*Judul* : ${res.data.title}\n*Info* : ${res.data.info}\n*Link* : ${res.data.link_dl}\n*Sinopsis* : ${res.data.sinopsis}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
     })
@@ -846,7 +846,7 @@ axios.get(`https://arugaz.herokuapp.com/api/kuso?q=${sons}`).then ((res) =>{
 
   //Random fakta
 if (text.includes('.Fakta')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (messageType === MessageType.text)
    {
@@ -868,34 +868,34 @@ if (messageType === MessageType.text)
 
   //Jadwal tv random
 if (text.includes('.Infotv')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infotv")){
 	axios.get(`https://docs-jojo.herokuapp.com/api/jadwaltvnow`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal tv⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal tv⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`*Jadwal* : \n${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
 }
   //Nama ninja
 if (text.includes('.Namae')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".namae")){
 const teks = text.replace(/.namae /, "")
 axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
-	conn.sendMessage(id, '[ WAIT ] Menggubah namamu⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Menggubah namamu⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `Nama Ninja kamu:\n\n*${res.data.result.ninja}*`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
   //Random informasi gempa
 if (text.includes('.Infogempa')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infogempa")){
   axios.get(`https://arugaz.herokuapp.com/api/infogempa`).then ((res) =>{
-  conn.sendMessage(id, '[ WAIT ] Menampilkan info gempa⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+  conn.sendMessage(id, '[ WAIT ] Menampilkan info gempa⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
   let hasil = ` *INFO GEMPA*\n*Lokasi* : _${res.data.lokasi}_\n *Kedalaman* : _${res.data.kedalaman}_\n*Koordinat* : _${res.data.koordinat}_\n*Magnitude* : _${res.data.magnitude}_\n*Waktu* : _${res.data.waktu}_\n${res.data.potensi}`;
   conn.sendMessage(id, hasil, MessageType.text, { quoted: m } );
 })
@@ -903,12 +903,12 @@ if (text.includes(".infogempa")){
 
   //Informasi cuaca daerah
 if (text.includes('.Cuaca')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".cuaca")){
    	const cuaca = text.replace(/.cuaca /, "")
    axios.get(`https://mhankbarbars.herokuapp.com/api/cuaca?q=${cuaca}&apiKey=${apibarbar}`).then ((res) =>{
-         conn.sendMessage(id, '[ WAIT ] Menampilkan cuaca⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+         conn.sendMessage(id, '[ WAIT ] Menampilkan cuaca⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
         let hasil = `*Tempat* : ${cuaca}\n*Angin* : ${res.data.result.angin}\n*Cuaca* : ${res.data.result.cuaca}\n*Deskripsi* : ${res.data.result.desk}\n*Kelembaban* : ${res.data.result.kelembapan}\n*Suhu* : ${res.data.result.suhu}\n*Udara* : ${res.data.result.udara}`
         conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
@@ -916,11 +916,11 @@ if (text.includes(".cuaca")){
 
   //Random puisi
 if (text.includes('.Puisi')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".puisi1")){
 	axios.get(`https://arugaz.herokuapp.com/api/puisi1`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
@@ -928,7 +928,7 @@ if (text.includes(".puisi1")){
 
 if (text.includes(".puisi2")){
 	axios.get(`https://arugaz.herokuapp.com/api/puisi2`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
@@ -936,7 +936,7 @@ if (text.includes(".puisi2")){
 
 if (text.includes(".puisi3")){
 	axios.get(`https://arugaz.herokuapp.com/api/puisi3`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching puisi⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
@@ -944,11 +944,11 @@ if (text.includes(".puisi3")){
 
   //Random cerpen
 if (text.includes('.Cerpen')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".cerpen")){
 	axios.get(`https://arugaz.herokuapp.com/api/cerpen`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching cerpen⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching cerpen⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
     })
@@ -956,7 +956,7 @@ if (text.includes(".cerpen")){
 
   //Pemendek link
 if (text.includes('.Shortlink')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".shortlink")){
 const teks = text.replace(/.shortlink /, "")
@@ -968,7 +968,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 
   //Text to pict
 if (text.includes('.logopornhub')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logopornhub')){
 var porn = text.split(".logopornhub ")[1];
@@ -979,14 +979,14 @@ var porn = text.split(".logopornhub ")[1];
         .then(
           (ress) => {
             var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ Por favor, aguarde sebentar', MessageType.text, { quoted: m })
             conn.sendMessage(id, buf, MessageType.image, { quoted: m });
         })
     })
 }
 
 if (text.includes('.Logoesport')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logoesport')){
 const teks = text.replace(/.logoesport /, "")
@@ -995,7 +995,7 @@ const teks = text.replace(/.logoesport /, "")
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Membuat teks⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+            conn.sendMessage(id, '[ WAIT ] Membuat teks⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
         })
@@ -1004,7 +1004,7 @@ const teks = text.replace(/.logoesport /, "")
 
   //Quotes maker
 if (text.includes('.Kata')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.kata')){
     const gh = text.split(".kata ")[1];
@@ -1015,7 +1015,7 @@ if (text.includes('.kata')){
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Membuat quotes⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+            conn.sendMessage(id, '[ WAIT ] Membuat quotes⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
         })
@@ -1024,12 +1024,12 @@ if (text.includes('.kata')){
 
   //jadwal tv nasional
 if (text.includes('.Jadwaltv')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".jadwaltv")){
 const teks = text.replace(/.jadwaltv /, "")
 axios.get(`https://mhankbarbars.herokuapp.com/api/jdtv?ch=${teks}&apiKey=${apibarbar}`).then((res) => {
-    conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal tv⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal tv⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
@@ -1037,11 +1037,11 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/jdtv?ch=${teks}&apiKey=${apiba
 
   //Informasi BMKG
 if (text.includes('.Infobmkg')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infobmkg")){
 	axios.get(`https://mnazria.herokuapp.com/api/bmkg-gempa`).then ((res) => {
-	conn.sendMessage(id, '[ WAIT ] Searching info BMKG⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+	conn.sendMessage(id, '[ WAIT ] Searching info BMKG⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
 	let hasil =`${res.data.result}\n*Saran* : ${res.data.saran}`
 	conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } )
     })
@@ -1049,7 +1049,7 @@ if (text.includes(".infobmkg")){
 
 //Kamus besar bahasa indonesia
 if (text.includes('.Kbbi')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".kbbi")){
 const teks = text.replace(/.kbbi /, "")
@@ -1061,7 +1061,7 @@ axios.get(`https://mhankbarbars.herokuapp.com/api/kbbi?query=${teks}&apiKey=${ap
 
 //Hari nasional
 if (text.includes('.Tglnas')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".tglnas")){
 const teks = text.replace(/.tglnas /, "")
@@ -1073,7 +1073,7 @@ axios.get(`https://api.haipbis.xyz/harinasional?tanggal=${teks}`).then((res) => 
 
 //Get zodiak
 if (text.includes('.Getzodiak')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.getzodiak')){
     const gh = text.split(".getzodiak ")[1];
@@ -1081,7 +1081,7 @@ if (text.includes('.getzodiak')){
     const tgl = gh.split("&")[1];
     axios.get(`https://arugaz.herokuapp.com/api/getzodiak?nama=${nama}&tgl-bln-thn=${tgl}`)
     .then((res) => {
-    conn.sendMessage(id, '[ WAIT ] Get zodiak⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+    conn.sendMessage(id, '[ WAIT ] Obtenha zodiak ⏳ Por favor, aguarde', MessageType.text, { quoted: m } )
     let hasil = `*Nama* : ${res.data.nama}\n*Tanggal lahir* : ${res.data.lahir}\n*Ultah* : ${res.data.ultah}\n*Usia* : ${res.data.usia}\n*Zodiak* : ${res.data.zodiak}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
     })
@@ -1089,7 +1089,7 @@ if (text.includes('.getzodiak')){
 
 //Random Al-Qur'an
 if (text.includes('.Ngaji')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 else if (text == '.ngaji'){
 axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
@@ -1103,17 +1103,17 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
 
 //Random loli
 if (text.includes('.Loli')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 
 //Random neko
 if (text.includes('.Neko')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 
-//Primbon kecocokan berdasarkan nama
+//Primbon Correspondências por nome
 if (text.includes('.Couple')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes('.couple')){
     const gh = text.split(".couple ")[1];
@@ -1121,24 +1121,24 @@ if (text.includes('.couple')){
     const doi = gh.split("& ")[1];
     axios.get(`https://arugaz.herokuapp.com/api/jodohku?nama=${lu}&pasangan=${doi}`)
     .then((res) => {
-    let hasil = `*Kecocokan berdasarkan nama*\n\n   *Nama* : ${res.data.nama}\n   *Pasangan* : ${res.data.pasangan}\n\n*Positif* : ${res.data.positif}\n*Negatif* : ${res.data.negatif}`;
+    let hasil = `*Correspondências por nome*\n\n   *Nama* : ${res.data.nama}\n   *Casal* : ${res.data.pasangan}\n\n*Positivo* : ${res.data.positif}\n*Negativo* : ${res.data.negatif}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 //Primbon arti nama
 if (text.includes('.Arti')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".arti")){
 const teks = text.replace(/.arti /, "")
 axios.get(`https://arugaz.herokuapp.com/api/artinama?nama=${teks}`).then((res) => {
-    let hasil = `*Arti dari namanu adalah*\n\n    *${teks}* ${res.data.result}`;
+    let hasil = `*O significado do seu nome é*\n\n    *${teks}* ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
 //simsimi
 if (text.includes('.Bot')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, { quoted: m } );
 }
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
@@ -1199,7 +1199,7 @@ if (text.includes('.chatprank')){
 
   //Al-Qur'an
 if (text.includes('.Alquran')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .alquran 1_',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas\n_contoh : .alquran 1_',MessageType.text, {quoted: m});
 }
 if (text.includes(".alquran")){
 const teks = text.replace(/.alquran /, "")
@@ -1211,7 +1211,7 @@ axios.get(`https://api.vhtear.com/quran?no=${teks}&apikey=${apivhtear}`).then((r
 
   //Gombalan
 if (text.includes('.Gombal')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (messageType === MessageType.text)
    {
@@ -1233,7 +1233,7 @@ if (messageType === MessageType.text)
 
  //Receh
 if (text.includes('.Receh')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (messageType === MessageType.text)
    {
@@ -1254,7 +1254,7 @@ if (messageType === MessageType.text)
 
   //truth
 if (text.includes('.Truth')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (messageType === MessageType.text)
    {
@@ -1275,7 +1275,7 @@ if (messageType === MessageType.text)
 
   //dare
 if (text.includes('.Dare')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (messageType === MessageType.text)
    {
@@ -1296,7 +1296,7 @@ if (messageType === MessageType.text)
   
   //status bapack
 if (text.includes('.Statpack')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (messageType === MessageType.text)
    {
@@ -1318,17 +1318,17 @@ if (messageType === MessageType.text)
 
 //tod
 if (text.includes('.Tod')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'Por favor, repita o comando em minúsculas',MessageType.text, {quoted: m});
 }
 if (text.includes('.tod')){
-conn.sendMessage(id, `Sebelum bermain berjanjilah akan melaksanakan apapun perintah yang di berikan. 
+conn.sendMessage(id, `antes de jogar, prometa cumprir qualquer comando dado. 
 
-Silakan pilih :
+Por favor selecione :
 
-*.Truth*
-*.Dare*
+*.Verdade*
+*.Desafio*
 
-*Selesaikan perintah untuk melakukan TOD selanjutnya* ⚠️` ,MessageType.text, {quoted: m});
+*Complete o comando para realizar o próximo TOD* ⚠️` ,MessageType.text, {quoted: m});
 }
 
 //Hay gay

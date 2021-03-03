@@ -458,7 +458,7 @@ const getRegisteredRandomId = () => {
 					// await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
 					break 
 			case 'owner':
-				return reply(`\`\`\`Owner do bot: ꧁ঔৣ☬✞ MindSeT ✞☬ঔৣ꧂\`\`\`\n\n\`\` Instagram: https://www.instagram.com/_joaolourencao/ \`\`\`\n\`\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``)
+				return reply(`\`\`\`Owner do bot: ꧁ঔৣ☬✞ MindSeT ✞☬ঔৣ꧂\`\`\`\n\n Instagram: https://www.instagram.com/_joaolourencao/ \`\`\`\n\`\`\`\`\n\`\`\`\n\`Total Do Utilizador(es): ${user.length} Pessoa(s)\`\`\``)
 				break
 			case 'help':
 			case 'menu':

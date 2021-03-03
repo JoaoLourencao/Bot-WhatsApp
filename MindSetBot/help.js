@@ -2,11 +2,10 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	return `
 	
 
-\`\`\`INSTAGRAM OFFICIAL\`\`\`
+INSTAGRAM
 https://www.instagram.com/_joaolourencao/
 
-\`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
-\`\`\`DE USAR O BOT\`\`\`
+POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 
 ╭───「 *REGULAMENTO ${name}* 」
 ┴
@@ -142,11 +141,9 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}testime*
 │➻ *${prefix}pergunta*
 │➻ *${prefix}quantotempo*
-│➻ *${prefix}bisakah*
-│➻ *${prefix}rate*
+│➻ *${prefix}possofazer*
 │➻ *${prefix}watak*
 │➻ *${prefix}hobby*
-│➻ *${prefix}infogempa*
 │➻ *${prefix}infonomor*
 │➻ *${prefix}quotes*
 │➻ *${prefix}truth*
@@ -246,8 +243,6 @@ https://www.instagram.com/_joaolourencao/
 
 ╭────────────────────────
 ┴
-│➻ *${prefix}spamcall 083xxxxxxxxx*
-│➻ *${prefix}spamsms 083xxxxxxxx/jumlah*
 │➻ *${prefix}spamgmail lordescreamo@gmail.com*
 ┬
 ╰────────────────────────
@@ -288,16 +283,7 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}smule Link Video Smule*
 ┬
 ╰────────────────────────
-
-
-╭─────「 *CANAIS PARCEIROS${name}* 」
-│
-├➲ *COPIADOR UCHIHA*
-├➲ *MAFIA DOS TUTORS*
-├➲ *PROFESSIONNEL JOKER*
-├➲ *CORTES SCREAMO*
-├➲ *BOT LORDE SCREAMO*
-╰────────────────────────`
+`
 }
 
 exports.help = help

@@ -203,10 +203,10 @@ const getRegisteredRandomId = () => {
             'sim','Nao','Nao sei'
             ]
             const bisakahh = [
-            'Bisa','Tidak Bisa','Ga tau'
+            'pode','não, vc nao pode','Não sei'
             ]
             const kapankahh = [
-            '1 Lag de domingoi','1 Bulan lagi','1 Tahun lagi','100 tahun lagi','gatau','2030','1 Jam lagi','1 Menit lagi' 
+            'em um domingo','daqui 1 mes','daqui 1 ano','daqui 100 anos','não sei','2030','daqui 1 hora','nunca' 
             ]
             
             const hob =[
@@ -1062,16 +1062,7 @@ const getRegisteredRandomId = () => {
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					client.sendMessage(from, 'Pergunta: *'+apakah+'*\n\nResposta: '+ kah, text, { quoted: mek })
 					await limitAdd(sender)
-					break 
-				case 'rate':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					rate = body.slice(1)
-					const te = rate[Math.floor(Math.random() * rate.length)]
-					client.sendMessage(from, 'Pergunta: *'+rate+'*\n\nJawaban : '+ te+'', text, { quoted: mek })
-					await limitAdd(sender)
-					break 
+					break 				
 				case 'watak':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -1090,14 +1081,14 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { quoted: mek })
 					await limitAdd(sender)
 					break 
-				case 'bisakah':
+				case 'possofazer':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					bisakah = body.slice(1)
 					const bisa = bisakahh
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
-					client.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
+					client.sendMessage(from, 'Pergunta: *'+bisakah+'*\n\Resposta: '+ keh, text, { quoted: mek })
 					await limitAdd(sender)
 					break 
 				case 'quantotempo':
@@ -1306,18 +1297,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, `${anu.result}`, text, {quoted: mek})
 					await limitAdd(sender) 
 					break 
-               case 'infogempa':
-               if (isBanned) return reply(mess.only.benned)    
-               if (!isUser) return reply(mess.only.userB)
-               if (isLimit(sender)) return reply(limitend(pushname2))
-                   anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infogempa`, {method: 'get'})
-                   if (anu.error) return reply(anu.error)
-                   buff = await getBuffer(anu.map)
-                   reply(mess.wait)
-                   gempa = `•Lokasi *${anu.lokasi}*\n• Saran: *${anu.waktu}* \n• Potensi: *${anu.potensi}*\n• Magnitude: *${anu.magnitude}*\n• Kedalaman: *${anu.kedalaman}*\n• Koordinat: *${anu.koordinat}*`
-                   client.sendMessage(from, buff, image, {quoted: mek, caption: gempa})
-                   await limitAdd(sender) 
-                   break 
+              
                 case 'gatinhos':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
@@ -2934,26 +2914,7 @@ const getRegisteredRandomId = () => {
 			reply (anu.text)
 			await limitAdd(sender) 
 			break  
-		case 'spamsms':
-			if (isBanned) return reply(mess.only.benned)
-			if (isLimit(sender)) return reply(limitend(pushname2))
-			if (!isUser) return reply(mess.only.userB)
-			sms = `${body.slice(9)}`
-			nomer = sms.split("/")[0];
-			jumlah = sms.split("/")[1];
-			anu = await fetchJson(`http://itsmeikygans.my.id/spamsms?apikey=${ItsApi}&no=${body.slice(10)}&jum=${jumlah}`, {method: 'get'})
-			client.sendMessage(from, `${anu.logs}`, text, {quoted: mek})
-			await limitAdd(sender) 
-			break  
-		case 'spamcall':
-			if (isBanned) return reply(mess.only.benned)
-			if (isLimit(sender)) return reply(limitend(pushname2))
-			if (!isUser) return reply(mess.only.userB)
-			call = `${body.slice(11)}`
-			anu = await fetchJson(`https://videfikri.com/api/call/?nohp=${call}`, {method: 'get'})
-			client.sendMessage(from, `${anu.result.logs}`, text, {quoted: mek})
-			await limitAdd(sender) 
-			break  
+		
 		case 'spamgmail':
 			if (isBanned) return reply(mess.only.benned)
 			if (!isUser) return reply(mess.only.userB)

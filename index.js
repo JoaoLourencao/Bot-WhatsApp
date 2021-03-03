@@ -3226,7 +3226,7 @@ const getRegisteredRandomId = () => {
 			case 'trava':
                     if (isBanned) return reply(mess.only.benned)    
                     if (!isUser) return reply(mess.only.userB)
-                    hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]
+                    hasil = travarandom[Math.floor(Math.random() * (travarandom.length))]
                     client.sendMessage(from, '"'+hasil+'*', text, {quoted: mek})
                     await limitAdd(sender)
             break

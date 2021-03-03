@@ -718,7 +718,7 @@ const getRegisteredRandomId = () => {
                     if (!isGroup) return reply(mess.only.group)
                     arg = body.substring(body.indexOf(' ') + 1)
 				    isi = arg.split('/')[0] 
-			        let pesan = arg.split('/')[1] 
+			        pesan = arg.split('/')[1] 
 				    pesan2 = arg.split('/')[2] 
                     costum(pesan, isi, pesan2)
                     await limitAdd(sender) 
@@ -1053,14 +1053,14 @@ const getRegisteredRandomId = () => {
                     reply(mess.wait)
                     reply(`\`\`\`✓Alterou  Perfis Do Grupo Com Sucesso\`\`\` *${groupMetadata.subject}*`)
                     break
-                case 'apakah':
+                case 'pergunta':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
 					apakah = body.slice(1)
 					const apa = apakahh
 					const kah = apa[Math.floor(Math.random() * apa.length)]
-					client.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
+					client.sendMessage(from, 'Pergunta: *'+apakah+'*\n\nResposta: '+ kah, text, { quoted: mek })
 					await limitAdd(sender)
 					break 
 				case 'rate':
@@ -1069,7 +1069,7 @@ const getRegisteredRandomId = () => {
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					rate = body.slice(1)
 					const te = rate[Math.floor(Math.random() * rate.length)]
-					client.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'', text, { quoted: mek })
+					client.sendMessage(from, 'Pergunta: *'+rate+'*\n\nJawaban : '+ te+'', text, { quoted: mek })
 					await limitAdd(sender)
 					break 
 				case 'watak':
@@ -1160,7 +1160,7 @@ const getRegisteredRandomId = () => {
                 case 'repollrt':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
-                    pesan = body.slice(8)
+                     const pesan = body.slice(8)
                       if (pesan.length > 300) return client.sendMessage(from, 'Desculpe, o texto é muito longo, máximo de 300 textos', text, {quoted: mek})
                         var nomor = mek.participant
                        const teks1 = `*[REPORT]*\nNumero : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
@@ -1294,16 +1294,7 @@ const getRegisteredRandomId = () => {
 					}
 					await limitAdd(sender) 
 					break 
-				case 'hilih':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-				reply(mess.wait)
-					if (args.length < 1) return reply('Cadê o texto, mano?')
-					anu = await fetchJson(`https://api.i-tech.id/tools/hilih?key=${TechApi}&kata=${body.slice(7)}`, {method: 'get'})
-					client.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break 
+				
 				case 'chord':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -1327,7 +1318,7 @@ const getRegisteredRandomId = () => {
                    client.sendMessage(from, buff, image, {quoted: mek, caption: gempa})
                    await limitAdd(sender) 
                    break 
-                case 'kucing':
+                case 'gatinhos':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
@@ -1542,7 +1533,7 @@ const getRegisteredRandomId = () => {
 					break 
 // akhir fitur anime
 
-				case 'anjing':
+				case 'bichinhos':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
@@ -1749,7 +1740,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, bufferx, image, {quoted: mek})
 					break
 //creator
-				case 'nulis':
+				case 'textoemfolha':
 				case 'tulis':
 				  client.updatePresence(from, Presence.composing)
 				if (isBanned) return reply(mess.only.benned)    
@@ -2320,14 +2311,7 @@ const getRegisteredRandomId = () => {
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break
-				case 'say':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					anu = await fetchJson(`https://anuz.herokuapp.com/api/bapakfont?kata=${body.slice(6)}`, {method: 'get'})
-					reply(anu.result)
-					await limitAdd(sender) 
-					break 
+			
 				case 'artinama':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -2404,7 +2388,7 @@ const getRegisteredRandomId = () => {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marca-alvo que você deseja chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'Pedidos recebidos, emitidos :\n'
@@ -2418,26 +2402,7 @@ const getRegisteredRandomId = () => {
 						client.groupRemove(from, mentioned)
 					}
 					break
-				case 'edotense':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Pedidos aceitos, no edo tensei :\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						client.groupRemove(from, mentioned)
-					} else {
-						mentions(`Perintah di terima, di edotense : @${mentioned[0].split('@')[0]}`, mentioned, true)
-						client.groupRemove(from, mentioned)
-					}
-					break
+				
 				case 'promote':
 				case 'pm':
 				if (isBanned) return reply(mess.only.benned)    

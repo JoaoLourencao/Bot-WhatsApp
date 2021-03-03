@@ -94,6 +94,11 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}welcome On/Off*
 │➻ *${prefix}grupoprivado on/off*
 │➻ *${prefix}antilink on/off*
+┬
+╰───────────────────────
+
+╭────────────────────────
+┴
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}naruto*
 │➻ *${prefix}minato*
@@ -114,14 +119,6 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}animekiss*
 │➻ *${prefix}wink*
 ┬
-╰───────────────────────
-
-╭────────────────────────
-┴
-│➻ *${prefix}fitnah*
-│➻ *${prefix}openanime*
-│➻ *${prefix}edotense*
-┬
 ╰────────────────────────
 
 ╭────────────────────────
@@ -139,13 +136,11 @@ https://www.instagram.com/_joaolourencao/
 
 ╭──────「 *OUTROS & GAME* 」
 ┴
-│➻ *${prefix}anjing*
+│➻ *${prefix}bichinhos*
 │➻ *${prefix}trava travazap*
-│➻ *${prefix}kucing*
+│➻ *${prefix}gatinhos*
 │➻ *${prefix}testime*
-│➻ *${prefix}hilih*
-│➻ *${prefix}say*
-│➻ *${prefix}apakah*
+│➻ *${prefix}verdade*
 │➻ *${prefix}kapankah*
 │➻ *${prefix}bisakah*
 │➻ *${prefix}rate*

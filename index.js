@@ -72,7 +72,7 @@ prefix = "_"
 name = "~ 𝑀𝑖𝑛𝑑𝒮𝑒𝒯 | 𝐵𝑜𝒯"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
 rmenu = "Olá amigos do MιɳԃSҽT"
-limitt = 50
+limitt = 200
 ban = []
 userpremium = ["5514991122284@s.whatsapp.net"] //ubah nomer kalian
 
@@ -724,19 +724,19 @@ const getRegisteredRandomId = () => {
                     await limitAdd(sender) 
                     break 
 
-				case 'infogc':
-				case 'groupinfo':
-				case 'infogrup':
-				case 'grupinfo':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-                client.updatePresence(from, Presence.composing)
-                if (!isGroup) return reply(mess.only.group)
-                ppUrl = await client.getProfilePicture(from)
-                reply(mess.wait) // leave empty to get your own
-			    buffer = await getBuffer(ppUrl)
-		        client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
-                break
+				// case 'infogc':
+				// case 'groupinfo':
+				// case 'infogrup':
+				// case 'grupinfo':
+				// if (isBanned) return reply(mess.only.benned)    
+				// if (!isUser) return reply(mess.only.userB)
+                // client.updatePresence(from, Presence.composing)
+                // if (!isGroup) return reply(mess.only.group)
+                // ppUrl = await client.getProfilePicture(from)
+                // reply(mess.wait) // leave empty to get your own
+			    // buffer = await getBuffer(ppUrl)
+		        // client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
+                // break
 				// case 'trendtwit':
 				// 	client.updatePresence(from, Presence.composing) 
                 //      if (!isUser) return reply(mess.only.userB)
@@ -853,7 +853,7 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 				case 'linkgroup':
-				case 'linkgrup':
+				case 'linkgrupo':
 				case 'linkgc':
 				case 'gruplink':
 				case 'grouplink':
@@ -2304,7 +2304,7 @@ const getRegisteredRandomId = () => {
 				// 	reply('De acordo com Kbbi:\n\n'+anu.result)
 				// 	await limitAdd(sender)
 				// 	break 
-					case 'grup':
+					case 'grupoprivado':
 					case 'gc':
 					case 'group':
 					if (isBanned) return reply(mess.only.benned)    
@@ -2312,10 +2312,10 @@ const getRegisteredRandomId = () => {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args[0] === 'buka') {
+					if (args[0] === 'off') {
 					    reply(`\`\`\`✓Grupo de abertura com sucesso\`\`\` *${groupMetadata.subject}*`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, false)
-					} else if (args[0] === 'tutup') {
+					} else if (args[0] === 'on') {
 						reply(`\`\`\`✓Sucesso no Fechamento do Grupo\`\`\` *${groupMetadata.subject}*`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}

@@ -78,6 +78,22 @@ https://www.instagram.com/_joaolourencao/
 
 ╭───────「 *GRUPO APENAS* 」
 ┴
+│➻ *${prefix}linkgrupo*
+│➻ *${prefix}ownergrup*
+│➻ *${prefix}add*
+│➻ *${prefix}kick*
+│➻ *${prefix}promote*
+│➻ *${prefix}demote*
+│➻ *${prefix}setname* muda nome grupo 
+│➻ *${prefix}setdesc* altera descricao
+│➻ *${prefix}mentionall* menciona membro
+│➻ *${prefix}tagall*
+│➻ *${prefix}listadmin*
+│➻ *${prefix}tagme*
+│➻ *${prefix}hidetag* marcar invisivel
+│➻ *${prefix}welcome On/Off*
+│➻ *${prefix}grupoprivado on/off*
+│➻ *${prefix}antilink on/off*
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}naruto*
 │➻ *${prefix}minato*
@@ -102,25 +118,7 @@ https://www.instagram.com/_joaolourencao/
 
 ╭────────────────────────
 ┴
-│➻ *${prefix}welcome On/Off*
-│➻ *${prefix}grup buka/tutup*
-│➻ *${prefix}antilink on/off*
-│➻ *${prefix}ownergrup*
-│➻ *${prefix}setpp*
-│➻ *${prefix}infogc*
-│➻ *${prefix}add*
-│➻ *${prefix}kick*
-│➻ *${prefix}promote*
-│➻ *${prefix}demote*
-│➻ *${prefix}setname* muda nome grupo 
-│➻ *${prefix}setdesc* altera descricao
-│➻ *${prefix}linkgrup*
-│➻ *${prefix}tagme*
-│➻ *${prefix}hidetag* marcar invisivel
-│➻ *${prefix}tagall*
-│➻ *${prefix}mentionall* menciona membro
 │➻ *${prefix}fitnah*
-│➻ *${prefix}listadmin*
 │➻ *${prefix}openanime*
 │➻ *${prefix}edotense*
 ┬
@@ -142,6 +140,7 @@ https://www.instagram.com/_joaolourencao/
 ╭──────「 *OUTROS & GAME* 」
 ┴
 │➻ *${prefix}anjing*
+│➻ *${prefix}trava travazap*
 │➻ *${prefix}kucing*
 │➻ *${prefix}testime*
 │➻ *${prefix}hilih*

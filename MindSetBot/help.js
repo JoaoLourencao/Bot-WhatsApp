@@ -140,8 +140,8 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}trava travazap*
 │➻ *${prefix}gatinhos*
 │➻ *${prefix}testime*
-│➻ *${prefix}verdade*
-│➻ *${prefix}kapankah*
+│➻ *${prefix}pergunta*
+│➻ *${prefix}quantotempo*
 │➻ *${prefix}bisakah*
 │➻ *${prefix}rate*
 │➻ *${prefix}watak*

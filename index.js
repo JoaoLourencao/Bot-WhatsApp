@@ -1100,14 +1100,14 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 					await limitAdd(sender)
 					break 
-				case 'kapankah':
+				case 'quantotempo':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					kapankah = body.slice(1)
 					const kapan = kapankahh
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
-					client.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
+					client.sendMessage(from, 'Pergunta: *'+kapankah+'*\n\nResposta: '+ koh, text, { quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'truth':

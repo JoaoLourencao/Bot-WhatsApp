@@ -83,7 +83,7 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 
-  return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
+  return `${pad(hours)} Hora(s) ${pad(minutes)} Minuto(s) ${pad(seconds)} Segundo(s)`
 }
 
 
@@ -363,7 +363,7 @@ const getRegisteredRandomId = () => {
 					client.updatePresence(from, Presence.composing) 
 					teks = `\`\`\`Ini adalah list group ${name} :\n\n\`\`\``
 					no = 0
-					for (let hehehe of groupId) {
+					for (let hehehe of Object.keys(groupId)) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
@@ -448,14 +448,18 @@ const getRegisteredRandomId = () => {
 					asal = reg.split("/")[2];
 					if (jeneng.length < 1) return reply('Qual é o nome??')
 					if (umure.length < 1) return reply('idade dele??')
-					if (jeneng.length >= 20) return reply(`buset panjang amat namanya`)
-					if (umure.length >= 3, umure.length <= 1) return reply(`minimal umur 10 tahun keatas dan maximal 30 tahun`)
+					if (jeneng.length >= 20) return reply(`𝑛𝑜𝑚𝑒 𝑚𝑢𝑖𝑡𝑜 𝑔𝑟𝑎𝑛𝑑𝑒, 𝑐𝑜𝑙𝑜𝑞𝑢𝑒 𝑠𝑜𝑚𝑒𝑛𝑡𝑒 𝑜 𝑝𝑟𝑖𝑚𝑒𝑖𝑟𝑜 𝑛𝑜𝑚𝑒!`)
+					if (umure.length >= 3, umure.length <= 1) return reply(`idαde mínimα de 10 αnos ou mαis e mαximα de 30 αnos`)
 					if (asal.length < 1) return reply('originado de mars gan??')
-					if (asal.length >= 20) return reply('onde fica a área mano🤔')
+					if (asal.length >= 20) return reply('onde fica a área mano?🤔')
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-					await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
+					return reply(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
+					// await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
 					break 
+			case 'owner':
+				return reply(`\`\`\`Owner do bot: MindSeT\`\`\`\n\n\`\`[Numero]: wa.me/${5514991122284}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
+				break
 			case 'help':
 			case 'menu':
 			if (isBanned) return reply(mess.only.benned)
@@ -475,20 +479,20 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, {quoted: mek})
     				break
 
-				case 'bahasa':
+				case 'idiomas':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				client.sendMessage(from, bahasa(), text, {quoted: mek})
+				client.sendMessage(from, bahasa(prefix), text, {quoted: mek})
 				break
 				case 'donuuasi':
-				case 'donate':
+				case 'doar':
 					client.sendMessage(from, donasi(instagram, name), text, {quoted: mek})
 					break
 				case 'info':
 					me = client.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Lorde Screamo* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Instagram* : https://www.instagram.com/lordescreamocanal/\n⟩➢ *Special Agradecimentos * :\n⟩➢ Deus \n⟩➢ Jesus`
+					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Mind Set* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Instagram* : https://www.instagram.com/_joaolourencao/\n⟩➢ *Agradecimentos especiais* :\n⟩➢ Deus \n⟩➢ Jesus`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break

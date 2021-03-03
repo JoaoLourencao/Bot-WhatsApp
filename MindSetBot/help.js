@@ -3,24 +3,21 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	
 
 \`\`\`INSTAGRAM OFFICIAL\`\`\`
-https://www.instagram.com/lordescreamocanal/
-
+https://www.instagram.com/_joaolourencao/
 
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
-\`\`\`USANDO O BOT\`\`\`
+\`\`\`DE USAR O BOT\`\`\`
 
-╭──────「 *REGULAMENTO ${name}* 」
+╭───「 *REGULAMENTO ${name}* 」
 ┴
 ┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
 ┣⊱  \`\`\`LIMITE:\`\`\` *${limitt}*
 ┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
-┣⊱  \`\`\`HORA:\`\`\` *${jam} WIB*
+┣⊱  \`\`\`HORA:\`\`\` *${jam}*
 ┣⊱  \`\`\`ENCONTRO:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSAO:\`\`\` *6.5.0*
+┣⊱  \`\`\`VERSAO:\`\`\` *7.0.0*
 ┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
-┣⊱  ❌ *SPAM*
-┣⊱  ❌ *CALL & VC*
 ┣⊱  \`\`\`Quebra??\`\`\` *Banido*
 ┬
 ╰────────────────────────
@@ -28,9 +25,8 @@ https://www.instagram.com/lordescreamocanal/
 
 ╭──────「 *SOBRE ${name}* 」
 ┴
-│➻ *${prefix}report lapor bug* primeira git termux com antilink
 │➻ *${prefix}info*
-│➻ *${prefix}donasi* mendingacao
+│➻ *${prefix}doar* faça uma doação
 │➻ *${prefix}owner*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
@@ -176,7 +172,7 @@ https://www.instagram.com/lordescreamocanal/
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS & GAME* 」
 ┴
 │➻ *${prefix}anjing*
 │➻ *${prefix}kucing*
@@ -296,7 +292,7 @@ https://www.instagram.com/lordescreamocanal/
 ╰────────────────────────
 
 
-╭─────────「 *SO PROPRIETARIO* 」
+╭─────「 *SO PROPRIETARIO* 」
 ┴
 │➻ *${prefix}addprem mentioned*
 │➻ *${prefix}removeprem mention*
@@ -320,7 +316,7 @@ https://www.instagram.com/lordescreamocanal/
 ╰────────────────────────
 
 
-╭────────「 *PREMIUM APENAS* 」
+╭────「 *PREMIUM APENAS* 」
 ┴
 │➻ *${prefix}playmp3 menepi*
 │➻ *${prefix}fb link video*

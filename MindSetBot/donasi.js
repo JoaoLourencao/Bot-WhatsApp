@@ -5,16 +5,12 @@ const donasi = (Ig, name) => {
 ┣━━━━━━━━━━━━━━━━━━━━
 ┣━⊱ *DOAR :)* ❉⊰━━✿
 ┃  
-┣━⊱ *OVO*
-┣⊱ 0831180
-┣━⊱ *PULSA*
-┣⊱ 0831180
+┣━⊱ *Pix*
+┣⊱ 14991122284
 ┃
 ┣━━━━━━━━━━━━━━━━━━━━
 ┃  *BOT BY ${name}*
 ┗━━━━━━━━━━━━━━━━━━━━
-Note:
-nao doem se alguem cobrar por bot e porque e passa fome da pra fazer gratis
 ${Ig}
 
 `

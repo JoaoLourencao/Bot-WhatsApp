@@ -30,7 +30,6 @@ const { exec } = require('child_process')
 const kagApi = require('@kagchi/kag-api')
 const fetch = require('node-fetch')
 const tiktod = require('tiktok-scraper')
-const igd = require('scraper-instagram')
 const ffmpeg = require('fluent-ffmpeg')
 const google = require('google-it')
 const get = require('got')
@@ -455,11 +454,11 @@ const getRegisteredRandomId = () => {
 					if (asal.length >= 20) return reply('onde fica a área mano?🤔')
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-					return reply(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\n`)
+					return reply(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``)
 					// await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
 					break 
 			case 'owner':
-				return reply(`\`\`\`Owner do bot: ꧁ঔৣ☬✞ MindSeT ✞☬ঔৣ꧂\`\`\`\n\n Instagram: https://www.instagram.com/_joaolourencao/ \`\`\`\n\`\`\`\`\`\`\n\`\`\`Total Do Utilizador(es): ${user.length} Pessoa(s)\`\`\``)
+				return reply(`\`\`\`Owner do bot: ꧁ঔৣ☬✞ MindSeT ✞☬ঔৣ꧂\`\`\`\n\n\`\` Instagram: https://www.instagram.com/_joaolourencao/ \`\`\`\n\`\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``)
 				break
 			case 'help':
 			case 'menu':
@@ -1726,7 +1725,7 @@ const getRegisteredRandomId = () => {
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
 					if (isLimit(sender)) return reply(limitend(pushname2))
-						if (args.length < 1) return client.sendMessage(from, 'Onde está o nome de usuário, mano?', text, {quoted: mek})
+						if (args.length < 1) return client.sendMessage(from, 'Usernamenya mana gan?', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
 						reply(mess.wait)
 						teks = `*ID* : ${user.id}\n*Username* : ${user.uniqueId}\n*Nickname* : ${user.nickname}\n*Followers* : ${stats.followerCount}\n*Followings* : ${stats.followingCount}\n*Posts* : ${stats.videoCount}\n*Luv* : ${stats.heart}\n`
@@ -2119,11 +2118,9 @@ const getRegisteredRandomId = () => {
                     if (isBanned) return reply(mess.only.benned)    
    					if (!isUser) return reply(mess.only.userB)
    					if (isLimit(sender)) return reply(limitend(pushname2))
-                    //     anu = await fetchJson(`https://mhankbarbar.tech/api/ig?username=${body.slice(9)}&apiKey=${BarBarApi}`, {method: 'get'})
-                    //  buffer = await getBuffer(anu.Profile_pic)
-                    //  reply(mess.wait)
-					let { user, stats } = await igd.getProfile(args[0])
-						reply(mess.wait)
+                        anu = await fetchJson(`https://mhankbarbar.tech/api/stalk?username=${body.slice(9)}&apiKey=${BarBarApi}`, {method: 'get'})
+                     buffer = await getBuffer(anu.Profile_pic)
+                     reply(mess.wait)
                      hasil = `「 *INSTAGRAM STALKER* 」\n\n• Link: https://www.instagram.com/${anu.Username}\n• Fullname : ${anu.Name}\n• Following : ${anu.Jumlah_Followers}\n• Followers : ${anu.Jumlah_Following}\n• Jumlah Postingan: ${anu.Jumlah_Post}\n• Bio : ${anu.Biodata}`
                     client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
                     await limitAdd(sender) 

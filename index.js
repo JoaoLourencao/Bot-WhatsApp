@@ -2122,7 +2122,7 @@ const getRegisteredRandomId = () => {
                     //     anu = await fetchJson(`https://mhankbarbar.tech/api/ig?username=${body.slice(9)}&apiKey=${BarBarApi}`, {method: 'get'})
                     //  buffer = await getBuffer(anu.Profile_pic)
                     //  reply(mess.wait)
-					let { user, stats } = await tiktod.getUserProfileInfo(args[0])
+					let { user, stats } = await igd.getProfile(args[0])
 						reply(mess.wait)
                      hasil = `「 *INSTAGRAM STALKER* 」\n\n• Link: https://www.instagram.com/${anu.Username}\n• Fullname : ${anu.Name}\n• Following : ${anu.Jumlah_Followers}\n• Followers : ${anu.Jumlah_Following}\n• Jumlah Postingan: ${anu.Jumlah_Post}\n• Bio : ${anu.Biodata}`
                     client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})

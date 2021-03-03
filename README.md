@@ -1,203 +1,235 @@
+### I'm FXC7BOT Gift Me Stars 🌟 <br><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="20px">
+<p align="center">
+<a href="https://github.com/Fxc7"><img src="https://raw.githubusercontent.com/Fxc7/termux-bot-wa/main/src/glitchtext.png"></a>
+</p>
+<br>
+
+
+
+<p align="center">
+<a href="#"><img title="termux-bot-wa" src="https://img.shields.io/badge/-TERMUX--BOT--WA-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="#"><img title="Arelbot" src="https://img.shields.io/badge/Termux Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="https://github.com/Fxc7"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FARHAN-orange?style=for-the-badge&logo=github"></a>
+</p>
 <p align="center">
-<a href="https://github.com/mrfzvx12/followers"><img title="Followers" src="https://img.shields.io/github/followers/mrfzvx12?color=blue&style=flat-square"></a>
-<a href="https://github.com/mrfzvx12/termux-whatsapp-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mrfzvx12/termux-whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/mrfzvx12/termux-whatsapp-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mrfzvx12/termux-whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/mrfzvx12/termux-whatsapp-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mrfzvx12/termux-whatsapp-bot?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmrfzvx12%2Ftermux-whatsapp-bot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"></a>
+<a href="https://github.com/Fxc7/termux-bot-wa/followers"><img title="Followers" src="https://img.shields.io/github/followers/Fxc7?style=flat-square"></a>
+<a href="https://github.com/Fxc7/termux-bot-wa/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fxc7/termux-bot-wa?style=flat-square"></a>
+<a href="https://github.com/Fxc7/termux-bot-wa/watchers"><img title="watchers" src="https://img.shields.io/github/watchers/FarhanXCode7/termux-bot-wa?style=flat-square"></a>
+
 </p>
 
-<div align="center">
-    <img alt="ARELBOT" src ="https://user-images.githubusercontent.com/72728486/102708092-ece61880-42d2-11eb-831b-f3909d67921e.jpg" width="320">
-    <h3> SCRIPT MODIFIKASI BUKAN HASIL SENDIRI </h3>
 
-# Hai 👋🏻
-
-Re-upload numpang ganti nama gabakal bikin lu pro
-</div>
-
-* "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?
-
-* Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
-
-* (QS ash-Shaff: 2-3).
-
-## Give me Start ⭐ please
-
-## Alat
-
-Download aplikasi termux disini [DOWNLOAD](https://play.google.com/store/apps/details?id=com.termux) 
+<details>
 
 
-## Settings
 
-* Nama bot
-* Instagram
-* Kapan Bot aktif
-* Apikey mhankbarbar
-* Apikey vhtear
-* Kontak whatsapp owner
+* [Ovo](08311800241)
+* [Pulsa](08311800241)
+</details>
 
-Custom di sini [SETTING](https://github.com/mrfzvx12/Arelbot/blob/master/index.js/#L13)
+## Tools
 
-
-## Penginstalan
-
-Jika pertama kali membuka termux lakukan perintah berikut :
 ```bash
-> pkg install git
-> pkg install wget
-> pkg install ffmpeg
-> pkg install nodejs
-> pkg install npm
+> Termux
+> WhatsApp
+> 2 HandPhone
 ```
-Lalu clone repo
+
+## Install
+Follow The Steps Below!
+
 ```bash
-> git clone https://github.com/mrfzvx12/termux-whatsapp-bot
-> cd termux-whatsapp-bot
-```
-Lanjutkan dengan
-```bash
+> termux-setup-storage
+(after that tap on permission)
+> pkg update -y
+> pkg upgrade -y
+> pkg install git -y
+> git clone https://github.com/Fxc7/termux-bot-wa
+> cd termux-bot-wa
+> npm cache clear
 > bash install.sh
+> npm audit fix
+> npm start / node index.js
 ```
-Jika mengalami error, lakukan perintah manual berikut :
-```bash
-> pkg install tesseract
-> npm i -g cwebp
-> npm i -g ytdl
-> npm i node-tesseract-ocr
-> npm i
-> npm i got
-```
-Jalankan bot
-```bash
-> node index.js
-```
-Terakhir scan kode QR
 
+<p align="center">
+<a href="#"><img title="termux-bot-wa" src="https://img.shields.io/badge/-TAMPILAN--MENU-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 
+<br>
+<img src="https://raw.githubusercontent.com/Fxc7/termux-bot-wa/main/src/Screenshot_2021-01-29-18-18-32-18.jpg" width="400px" height="650px">
+</p>
 
-## FITUR
+## Features
 
-| SIMSIMI |Yes|
-| ------------- | ------------- |
-| Simsimi |✅|
+| NEW USER | YES
+| :---------------------------------------------: | :-----------: |
+|  Register Name And Age origin|✅|
 
-| FUN |Yes|
-| ------------- | ------------- |
-| Say|✅|
-| Nama ninja|✅|
-| Puisi|✅|
-| Cerpen|✅|
-| Tagme|✅|
-| Seberapa gay|✅|
-| Seberapa bucin|✅|
-| Chat prank|✅|
-| Font alay|✅|
-| Family 100|✅|
-| Kata kata receh|✅|
-| Status bapack|✅|
-| Gombal|✅|
+|  CREATOR  |                                           YES |
+| :---------------------------------------------: | :-----------: |
+| Sticker Maker|✅|
+| Sticker Gif Maker|✅|
+| Convert Sticker To Image|✅|
+| Convert Video To MP3|✅|
+| Black Pink Logo Maker|✅|
+| 3D Text Maker|✅|
+| Quote Maker|✅|
+| Water Maker|✅|
+| Fire Text Maker
+| Marvel Logo Maker|✅|
+| Snow Write Maker|✅|
+| Ninja Logo Maker|✅|
+| Logo Wolf Maker|✅|
+| And much more |✅|
 
+| MEDIA | YES |
+| :-----------------: | :-------: |
+| Trend Twit|✅|
+| YT Search|✅|
+| Wattpad Search|✅|
 
-| PRIMBON |Yes|
-| ------------- | ------------- |
-| Arti nama|✅|
-| Kecocokan nama|✅|
-| Get zodiak|✅|
-| Zodiak|✅|
-
-| Game |Yes|
-| ------------- | ------------- |
-| Tebak gambar|✅|
-| Family 100|✅|
-| Truth or dare|✅|
-
-
-| DOWNLOAD |Yes|
-| ------------- | ------------- |
-| Youtube Music |✅|
-| Youtube Video |✅|
-| Instagram foto/video |✅|
-| Facebook video |✅|
-| Twitter video |✅|
-
-| TOOLS |Yes|
-| ------------- | ------------- |
-| Nulis|✅|
-| Stiker|✅|
-| OCR|✅|
-| Instagram stalker|✅|
-| Shortlink|✅|
-
-| PICTURE |Yes|
-| ------------- | ------------- |
-| Cecan|✅|
-| Cogan|✅|
-| Anime|✅|
-| Loli|✅|
-| Neko|✅|
-| Wallpaper|✅|
+| EDUCATION | YES |
+| :-----------------: | :-------: |
+| The Meaning Of The Name|✅|
+| Text To Sticker|✅|
+| Nulis Name/class/text|✅|
 | Quotes|✅|
-| Twitter|✅|
+
+| ASK | YES |
+| :-----------------: | :-------: |
+| Apakah|✅|
+| Kapankah|✅|
+| Bisakah|✅|
+
+| DOWNLOADER | YES |
+| :-----------------: | :-------: |
+| Pinterest Downloader|✅|
+
+| MEME | YES |
+| :-----------------: | :-------: |
 | Meme|✅|
-| Img|✅|
+| Meme Indo|✅|
 
-| TEXT |Yes|
-| ------------- | ------------- |
-| Quotes maker|✅|
-| Logo pornhub|✅|
-| Logo e-sport|✅|
+| GROUP | YES |
+| :-----------------: | :-------: |
+| Open Group|✅|
+| Link Group|✅|
+| info Group|✅|
+| Close Group|✅|
+| Promote Member|✅|
+| Demote Member|✅|
+| Hide Tag|✅|
+| Tag All Members|✅|
+| Add Member|✅|
+| Kick Member|✅|
+| Show List Admins|✅|
+| Leave Group|✅|
+| Show Owner Group|✅|
+| welcome New Members|✅|
+| Nsfw|✅|
 
-| EDUKASI |Yes|
-| ------------- | ------------- |
-| Al-Qur'an|✅|
-| Al-Qur'an per surah|✅|
-| Brainly|✅|
-| Wikipedia|✅|
-| Fakta|✅|
+| SOUND | YES |
+| :-----------------: | :-------: |
+| Text To Speach|✅|
+
+| MUSIC | YES |
+| :-----------------: | :-------: |
+| Music Lyrics|✅|
+| Chord Guitar|✅|
+
+| ISLAM | YES |
+| :-----------------: | :-------: |
+| Qur'an|✅|
+| Qur'an Surah 1,2,3 dll |✅|
+
+| STALK | YES |
+| :-----------------: | :-------: |
+| Instagram Stalk|✅|
+| Tiktok Stalk|✅|
+
+| WIBU | YES |
+| :-----------------: | :-------: |
+| Neonime|✅|
+| Pokemon|✅|
+| Nekonime|✅|
+| Naruto|✅|
+| Loli|✅|
+| Random Shota|✅|
+| Random Waifu|✅|
+| Random Anime|✅|
+| And much more|✅|
+
+| FUN | YES |
+| :-----------------: | :-------: |
+| Kucing|✅|
+| Anjing|✅|
+| Alay|✅|
+| Glitch|✅|
+| hilih|✅|
+| Cek Ganteng|✅|
+| Watak|✅|
+| Random Hobby|✅|
+| Pinterest [Optional] |✅|
+
+| INFORMATION | YES |
+| :-----------------: | :-------: |
+| List Bahasa|✅|
+| Information Weather|✅|
 | KBBI|✅|
-| Tanggal Nasional|✅|
+| Fakta|✅|
+| Covid|✅|
+| Gempa Terkini|✅|
 
-| WHEATER |Yes|
-| ------------- | ------------- |
-| Info BMKG |✅|
-| Info gempa |✅|
-| Info cuaca |✅|
+| 18+ | YES |
+| :-----------------: | :-------: |
+| Random Hentai|✅|
+| NSFW Neko|✅|
 
-| Others |Yes|
-| ------------- | ------------- |
-| Jadwal tv|✅|
-| Jadwal tv (channel)|✅|
-| Jadwal sholat|✅|
-| Info Covid|✅|
-| Info anime|✅|
-| Lirik lagu|✅|
-| Chord lagu|✅|
-| Mini map|✅|
+| OWNER | YES |
+| :-----------------: | :-------: |
+| Set pp bot|✅|
+| Set Reply Chat|✅|
+| add premium |✅|
+| remove premium |✅|
+| Set Prefix|✅|
+| Block Member|✅|
+| Broadcast|✅|
+| Group Broadcast|✅|
+| Clear All Chat|✅|
 
-| Groups |Yes|
-| ------------- | ------------- |
-| Merubah Nama grup|✅|
-| Merubah deskripsi grup|✅|
-| Menutup grup|✅|
-| Membuka grup|✅|
-| Ping|✅|
-| Owner|✅|
+| PREMIUM MENU | YES |
+| :-----------------: | :-------: |
+| Youtube mp3 Download|✅|
+| Youtube mp4 Download|✅|
+| Joox|✅|
+| Facebook Video Download|✅|
+| Snack Video Download|✅|
+| Play Mp3|✅|
 
-## Contacts
-* [Instagram](https://www.instagram.com/mrf.zvx/)
-* [Facebook](https://www.facebook.com/profile.php?id=100028409167054)
-* My whatsapp bot [Arel Bot](https://wa.me/6282223014661)
+ TENTANG BOT | YES |
+| :-----------------: | :-------: |
+| info|✅|
+| ChatList|❌|
 
 
-## Terimakasih untuk
-* [`Fdciabdul`](https://github.com/fdciabdul)
-* [`Aruga`](https://github.com/ArugaZ)
-* [`Mhankbarbar`](https://github.com/MhankBarBar)
-* [`Alfiansx`](https://github.com/alfiansx)
-* [`Bintang73`](https://github.com/Bintang73)
-* [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
+## Note
+
+* Dont Forget Stars
+
+* |En| And You can add your own quotes
+* |Ind| Dan Kalian Bisa tambahkan Quotes Kalian
+
+
+## Special Thanks
+
+* [Baileys](https://github.com/baileys)
+* Created Bot => [MhankBarBar](https://github.com/MhankBarBar)
+
+
+
+## Group
+
+* <a href="https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
+---

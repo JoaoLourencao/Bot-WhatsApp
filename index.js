@@ -19,10 +19,10 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./Fxc7/help')
-const { bahasa } = require('./Fxc7/bahasa')
-const { donasi } = require('./Fxc7/donasi')
-const { limitend, limitcount } = require('./Fxc7/limit')
+const { help } = require('./MindSetBot/help')
+const { bahasa } = require('./MindSetBot/bahasa')
+const { donasi } = require('./MindSetBot/donasi')
+const { limitend, limitcount } = require('./MindSetBot/limit')
 
 const fs = require('fs-extra')
 const moment = require('moment-timezone')
@@ -63,17 +63,17 @@ instagram, yt, groupLink, memberLimit
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Farhan\n'
-            + 'ORG:Creator FXC7;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=628311800241:+62 831-1800-241\n'
+            + 'ORG:Creator MindSetBot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=5514991122284:+55 14 99112-2284\n'
             + 'END:VCARD'
 
 prefix = "_"
-name = "~ SCREAMO | B O T"
+name = "~ 𝑀𝑖𝑛𝑑𝒮𝑒𝒯 | 𝐵𝑜𝒯"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-rmenu = "Olá amigos do LORDEBOT👋"
+rmenu = "Olá amigos do MιɳԃSҽT"
 limitt = 50
 ban = []
-userpremium = ["821074417113@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["5514991122284@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -95,7 +95,7 @@ async function starts() {
 		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
 	})
 
-	fs.existsSync('./Fxc7.json') && client.loadAuthInfo('./Fxc7.json')
+	fs.existsSync('./MindSetBot.json') && client.loadAuthInfo('./MindSetBot.json')
 	client.on('connecting', () => {
 		start('2', 'Connecting...')
 	})
@@ -103,7 +103,7 @@ async function starts() {
 		success('2', 'Connected')
 	})
 	await client.connect({timeoutMs: 30*1000})
-        fs.writeFileSync('./Fxc7.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+        fs.writeFileSync('./MindSetBot.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 
 	client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -179,7 +179,7 @@ const getRegisteredRandomId = () => {
 			
 
 			mess = {
-				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í 𝗺𝗮𝗻𝗼 𝘁𝗼𝗺𝗲 𝘂𝗺 𝗰𝗮𝗳é☕𝗲 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼...*',
+				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í 𝗰𝗮𝙧𝗮𝙞, 𝘁𝗼𝗺𝗮 𝘂𝗺 𝗰𝗮𝗳é ☕ 𝗲 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼...*',
 				success: '*ꜱᴜceꜱꜱo...*',
 				error: {
 					stick: ' *𝙢𝙖𝙣𝙤 𝙙𝙚𝙪 𝙧𝙪𝙞𝙢 𝙖𝙤 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙧 𝙖 𝙞𝙢𝙖𝙜𝙚𝙢 𝙚𝙢 𝙨𝙩𝙞𝙘𝙠𝙚𝙧 *',
@@ -191,7 +191,7 @@ const getRegisteredRandomId = () => {
 					ownerG: '*𝙨𝙤𝙢𝙚𝙣𝙩𝙚 𝘼𝘿𝙈 𝙥𝙤𝙙𝙚 𝙪𝙨𝙖𝙧 𝙚𝙨𝙨𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙚𝙢 𝙂𝙧𝙪𝙥𝙤𝙨 !*',
 					ownerB: '*𝘀o 𝗼 𝗱𝗼𝗻𝗼 𝗱𝗼 𝗯𝗼𝘁 𝗽𝗼𝗱𝗲 𝘂𝘀𝗮𝗿 𝗲𝘀𝘀𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 !* ',
 					premium: '*𝗗𝗘𝗦𝗖𝗨𝗟𝗣𝗘 𝗘𝗦𝗧𝗘 𝗥𝗘𝗖𝗨𝗥𝗦𝗢 𝗣𝗔𝗥𝗔 𝗨𝗦𝗨A𝗥𝗜𝗢 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗘𝗦𝗣𝗘𝗖I𝗙I𝗖𝗢!!*',
-					userB: `ʜᴀɪ *${pushname2}* 𝙫𝙤𝙘e 𝙖𝙞𝙣𝙙𝙖 𝙣a𝙤 𝙨𝙚 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙤𝙪  *${name}* \n𝗽𝗮𝗿𝗮 𝘀𝗲 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗿 𝗲𝗻𝘃𝗶𝗲 𝗼𝘀 𝗰𝗼𝗺𝗮𝗻𝗱𝗼𝘀\n\n exemplo ${prefix}ᴅᴀꜰᴛᴀʀ ${pushname2}/17/brasil`,
+					userB: `𝗢𝗹𝐚 *${pushname2}*, 𝙫𝙤𝙘e 𝙖𝙞𝙣𝙙𝙖 𝙣a𝙤 𝙨𝙚 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙤𝙪  *${name}* \n𝗽𝗮𝗿𝗮 𝘀𝗲 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗿 𝗲𝗻𝘃𝗶𝗲 𝗼𝘀 𝗰𝗼𝗺𝗮𝗻𝗱𝗼𝘀\n\n exemplo ${prefix}ᴅᴀꜰᴛᴀʀ ${pushname2}/17/brasil`,
 					admin: '*sᴏᴍᴇɴᴛᴇ ᴏ ᴀᴅᴍ ᴘᴏᴅᴇ ᴜsᴀʀ ᴇssᴇ ᴄᴏᴍᴀɴᴅᴏ !*',
 					Badmin: '*𝐃𝐄𝐒𝐂𝐔𝐋𝐏𝐄, 𝐄𝐒𝐓𝐄 𝐏𝐄𝐃𝐈𝐃𝐎 𝐒O 𝐏𝐎𝐃𝐄 𝐔𝐒𝐀𝐑 𝐍𝐎𝐒𝐒𝐎𝐒 𝐁𝐎𝐓𝐒 𝐏𝐀𝐑𝐀 𝐒𝐄𝐑 𝐀𝐃𝐌𝐈𝐍𝐒!*'
 				}
@@ -225,7 +225,7 @@ const getRegisteredRandomId = () => {
             ]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["821074417113@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["5514991122284@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -703,7 +703,7 @@ const getRegisteredRandomId = () => {
 				    await limitAdd(sender) 	
 				    break 
 				case 'ouuudwner':
-                 client.sendMessage(from, {displayname: "Fxc7", vcard: vcard}, MessageType.contact, { quoted: mek})
+                 client.sendMessage(from, {displayname: "MindSetBot", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
                  break
                  case 'fitnah':	
@@ -2175,7 +2175,7 @@ const getRegisteredRandomId = () => {
 				 if (isLimit(sender)) return reply(limitend(pushname2))
 				if (!isUser) return reply(mess.only.userB)
 				reply(mess.wait)
-				 data = fs.readFileSync('./Fxc7/drak.js');
+				 data = fs.readFileSync('./MindSetBot/drak.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -2373,7 +2373,7 @@ const getRegisteredRandomId = () => {
 						reply('Transmissão de sucesso')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *FXC7BOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *MindSeTBOT BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Transmissão de sucesso')
 					}
@@ -3229,7 +3229,7 @@ const getRegisteredRandomId = () => {
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[FXC7BOT]','red'), 'Comando não registrado', color(sender.split('@')[0]))
+						console.log(color('[MindSeTBOT]','red'), 'Comando não registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {

@@ -43,60 +43,27 @@ https://www.instagram.com/_joaolourencao/
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOAD* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk _LORDE SCREAMO*
-│➻ *${prefix}insta Link*
-│➻ *${prefix}instastory username*
-│➻ *${prefix}ssweb url*
-│➻ *${prefix}url2img Url*
-│➻ *${prefix}tiktok*
 │➻ *${prefix}fototiktok*
 │➻ *${prefix}meme*
 │➻ *${prefix}memeindo*
-│➻ *${prefix}kbbi*
 │➻ *${prefix}wait*
-│➻ *${prefix}trendtwit*
-│➻ *${prefix}google berita terkini*
+│➻ *${prefix}google Pesquisa*
 ┬
 ╰────────────────────────
 
 
 ╭──────「 *CRIADOR MENU* 」
 ┴
-│➻ *${prefix}quotemaker tx/wtrmk/tema*
-│➻ *${prefix}nulis nama/kelas/text*
+│➻ *${prefix}quotemaker texto/nome/tema*
+│➻ *${prefix}textoemfolha nome/titulo/texto*
 │➻ *${prefix}rain reply image*
 │➻ *${prefix}trigger reply image*
 │➻ *${prefix}rip reply image*
-│➻ *${prefix}wasted reply image*
-│➻ *${prefix}cphlogo CAFE/BOT*
-│➻ *${prefix}cglitch SCREAMO/BOT*
-│➻ *${prefix}cpubg SCREAMO/BOT*
-│➻ *${prefix}cml SCREAMO*
 │
 │➻ *${prefix}tahta SCREAMO*
-│➻ *${prefix}croman SCREAMO dan BOT*
-│➻ *${prefix}cthunder SCREAMO*
-│➻ *${prefix}cbpink SCREAMO*
-│➻ *${prefix}cmwolf SCREAMO*
-│➻ *${prefix}csky SCREAMO*
-│➻ *${prefix}cwooden SCREAMO*
-│➻ *${prefix}cflower SCREAMO*
-│➻ *${prefix}clove SCREAMO*
-│➻ *${prefix}ccrossfire SCREAMO*
-│➻ *${prefix}cnaruto SCREAMO*
-│➻ *${prefix}cparty SCREAMO*
-│➻ *${prefix}cshadow SCREAMO*
-│➻ *${prefix}cminion SCREAMO*
-│➻ *${prefix}cneon CAFE*
-│➻ *${prefix}cneon2 CAFE*
-│➻ *${prefix}cneongreen CAFE*
-│➻ *${prefix}c3d CAFE*
-│➻ *${prefix}csky CAFE*
-│➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp Screamo*
+│➻ *${prefix}tts Mensagem*
 │➻ *${prefix}cballon Screamo*
 │➻ *${prefix}cpaper Screamo*
-│➻ *${prefix}slide Screamo BOT WA*
 │
 │➻ *${prefix}stiker*
 │➻ *${prefix}gifstiker*

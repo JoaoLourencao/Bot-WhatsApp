@@ -34,6 +34,7 @@ const ffmpeg = require('fluent-ffmpeg')
 const google = require('google-it')
 const get = require('got')
 const emojiUnicode = require('emoji-unicode')
+const imgbb = require('imgbb-uploader')
 const imageToBase64 = require('image-to-base64')
 const speed = require('performance-now')
 const imgbb = require('imgbb-uploader')
@@ -649,7 +650,6 @@ const getRegisteredRandomId = () => {
                          ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
                          reply(mess.wait)
                          owgi = await  client.downloadAndSaveMediaMessage(ger)
-                         imgbb = require('imgbb-uploader')
                          anu = await imgbb("727e7e43f6cda1dfb85d888522fd4ce1", owgi)
                         teks = `${anu.display_url}`
                         ranp = getRandom('.gif')
@@ -668,33 +668,33 @@ const getRegisteredRandomId = () => {
                           }
                           await limitAdd(sender) 
                           break  
-                   case 'wasted':
-                                        if (!isUser) return reply(mess.only.userB)
-                                        if (isBanned) return reply(mess.only.benned)
-                                        if (isLimit(sender)) return reply(limitend(pushname2))
-                                         if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-                                         ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-                                         reply(mess.wait)
-                                         owgi = await  client.downloadAndSaveMediaMessage(ger)
-                                         imgbb = require('imgbb-uploader')
-                                         anu = await imgbb("727e7e43f6cda1dfb85d888522fd4ce1", owgi)
-                                        teks = `${anu.display_url}`
-                                        ranp = getRandom('.png')
-                                        rano = getRandom('.webp')
-                                        anu1 = `https://some-random-api.ml/canvas/wasted?avatar=${teks}`
-                                         exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-                                                fs.unlinkSync(ranp)
-                                                if (err) return reply(mess.error.stick)
-                                                nobg = fs.readFileSync(rano)
-                                                 client.sendMessage(from, nobg, sticker, {quoted: mek})
-                                                fs.unlinkSync(rano)
-                                        })
+                //    case 'wasted':
+                //                         if (!isUser) return reply(mess.only.userB)
+                //                         if (isBanned) return reply(mess.only.benned)
+                //                         if (isLimit(sender)) return reply(limitend(pushname2))
+                //                          if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+                //                          ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+                //                          reply(mess.wait)
+                //                          owgi = await  client.downloadAndSaveMediaMessage(ger)
+                //                          imgbb = require('imgbb-uploader')
+                //                          anu = await imgbb("727e7e43f6cda1dfb85d888522fd4ce1", owgi)
+                //                         teks = `${anu.display_url}`
+                //                         ranp = getRandom('.png')
+                //                         rano = getRandom('.webp')
+                //                         anu1 = `https://some-random-api.ml/canvas/wasted?avatar=${teks}`
+                //                          exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+                //                                 fs.unlinkSync(ranp)
+                //                                 if (err) return reply(mess.error.stick)
+                //                                 nobg = fs.readFileSync(rano)
+                //                                  client.sendMessage(from, nobg, sticker, {quoted: mek})
+                //                                 fs.unlinkSync(rano)
+                //                         })
                                     
-                                             } else {
-                                                 reply('Use uma foto!')
-                                          }
-                                          await limitAdd(sender) 
-                                          break  
+                //                              } else {
+                //                                  reply('Use uma foto!')
+                //                           }
+                //                           await limitAdd(sender) 
+                //                           break  
                         
                  case 'kalkulator':
 					if (isBanned) return reply(mess.only.benned)    
@@ -737,19 +737,19 @@ const getRegisteredRandomId = () => {
 			    buffer = await getBuffer(ppUrl)
 		        client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
                 break
-				case 'trendtwit':
-					client.updatePresence(from, Presence.composing) 
-                     if (!isUser) return reply(mess.only.userB)
-                     if (isLimit(sender)) return reply(limitend(pushname2))
-					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/trendingtwitter`, {method: 'get'})
-					reply(mess.wait)
-					teks = '=================\n'
-					for (let i of data.result) {
-						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
-					}
-					reply(teks.trim())
-					await limitAdd(sender) 
-					break 
+				// case 'trendtwit':
+				// 	client.updatePresence(from, Presence.composing) 
+                //      if (!isUser) return reply(mess.only.userB)
+                //      if (isLimit(sender)) return reply(limitend(pushname2))
+				// 	data = await fetchJson(`https://docs-jojo.herokuapp.com/api/trendingtwitter`, {method: 'get'})
+				// 	reply(mess.wait)
+				// 	teks = '=================\n'
+				// 	for (let i of data.result) {
+				// 		teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
+				// 	}
+				// 	reply(teks.trim())
+				// 	await limitAdd(sender) 
+				// 	break 
 				case 'testime':
 					setTimeout( () => {
 					client.sendMessage(from, 'Waktu habis:v', text, {quoted: mek}) // ur cods
@@ -1207,18 +1207,18 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					await limitAdd(sender)
 					break 
-				case 'ssweb':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Urlnya mana gan?')
-					teks = `${body.slice(7)}`
-					reply(mess.wait)
-					anu = await fetchJson(`https://mnazria.herokuapp.com/api/screenshotweb?url=${teks}`)
-					ssweb = await getBuffer(anu.gambar)
-					client.sendMessage(from, ssweb, image, {quoted: mek})
-					await limitAdd(sender)
-					break 
+				// case 'ssweb':
+				// if (isBanned) return reply(mess.only.benned)    
+				// if (!isUser) return reply(mess.only.userB)
+				// if (isLimit(sender)) return reply(limitend(pushname2))
+				// 	if (args.length < 1) return reply('Urlnya mana gan?')
+				// 	teks = `${body.slice(7)}`
+				// 	reply(mess.wait)
+				// 	anu = await fetchJson(`https://mnazria.herokuapp.com/api/screenshotweb?url=${teks}`)
+				// 	ssweb = await getBuffer(anu.gambar)
+				// 	client.sendMessage(from, ssweb, image, {quoted: mek})
+				// 	await limitAdd(sender)
+				// 	break 
 				case 'nsfwloli':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
@@ -1649,28 +1649,28 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 			
-			case 'insta':
-				if (isBanned) return reply(mess.only.benned)
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
-				    anu = await fetchJson(`https://api.i-tech.id/dl/igdl?key=${TechApi}&link=${args[0]}`, {method: 'get'})
-				    insta = getBuffer(anu.result.url)
-				    reply(mess.wait)
-				    client.sendMessage(from, insta, {quoted: mek})
-				    await limitAdd(sender) 
-				    break  
+			// case 'insta':
+			// 	if (isBanned) return reply(mess.only.benned)
+			// 	if (!isUser) return reply(mess.only.userB)
+			// 	if (isLimit(sender)) return reply(limitend(pushname2))
+			// 	if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
+			// 	    anu = await fetchJson(`https://api.i-tech.id/dl/igdl?key=${TechApi}&link=${args[0]}`, {method: 'get'})
+			// 	    insta = getBuffer(anu.result.url)
+			// 	    reply(mess.wait)
+			// 	    client.sendMessage(from, insta, {quoted: mek})
+			// 	    await limitAdd(sender) 
+			// 	    break  
 				    
-				case 'instastory':
-				if (isBanned) return reply(mess.only.benned)
-				if (!isUser) return reply(mess.only.userB) 
-				if (isLimit(sender)) return reply(limitend(pushname2))
-				instor = `${body.slice(12)}`
-				anu = await fetchJson(`https://api.i-tech.id/dl/story?key=${TechApi}&username=${instor}`, {method: 'get'})
-				buff = await getBuffer(anu.result.url)
-				client.sendMessage(from, buff, image, {quoted: mek})
-				await limitAdd(sender)
-				break
+				// case 'instastory':
+				// if (isBanned) return reply(mess.only.benned)
+				// if (!isUser) return reply(mess.only.userB) 
+				// if (isLimit(sender)) return reply(limitend(pushname2))
+				// instor = `${body.slice(12)}`
+				// anu = await fetchJson(`https://api.i-tech.id/dl/story?key=${TechApi}&username=${instor}`, {method: 'get'})
+				// buff = await getBuffer(anu.result.url)
+				// client.sendMessage(from, buff, image, {quoted: mek})
+				// await limitAdd(sender)
+				// break
 			case 'hekerbucin':
 				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB) 
@@ -1707,19 +1707,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, film, text, {quoted: mek})
 					await limitAdd(sender) 
 					break 
-				case 'tiktok':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Urlnya mana gan?')
-					if (!isUrl(args[0]) && !args[0].includes('vt')) return reply(mess.error.Iv)
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/tiktokdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					buffer = await getBuffer(anu.result.video)
-					client.sendMessage(from, buffer, video, {quoted: mek})
-					await limitAdd(sender)
-					break 
+				// case 'tiktok':
+				// if (isBanned) return reply(mess.only.benned)    
+				// if (!isUser) return reply(mess.only.userB)
+				// if (isLimit(sender)) return reply(limitend(pushname2))
+				// 	if (args.length < 1) return reply('Urlnya mana gan?')
+				// 	if (!isUrl(args[0]) && !args[0].includes('vt')) return reply(mess.error.Iv)
+				// 	reply(mess.wait)
+				// 	anu = await fetchJson(`https://api.vhtear.com/tiktokdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
+				// 	if (anu.error) return reply(anu.error)
+				// 	buffer = await getBuffer(anu.result.video)
+				// 	client.sendMessage(from, buffer, video, {quoted: mek})
+				// 	await limitAdd(sender)
+				// 	break 
 				case 'tiktokstalk':
 					try {
 					if (isBanned) return reply(mess.only.benned)    
@@ -1755,7 +1755,7 @@ const getRegisteredRandomId = () => {
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-			if (args.length < 1) return reply(`${name} Harus Nulis Apa Kak??`)
+			if (args.length < 1) return reply(`${name} O que deve escrever??`)
 			reply(mess.wait)
 					tulis = body.slice(7)
 				  nama = tulis.split("/")[0];
@@ -2041,7 +2041,7 @@ const getRegisteredRandomId = () => {
 					quote = gh.split("/")[0];
 					wm = gh.split("/")[1];
 					bg = gh.split("/")[2];
-					const pref = `Usage: \n${prefix}quotemaker teks/watermark/theme\n\nEx :\n${prefix}quotemaker ini contoh/bicit/random`
+					const pref = `Usage: \n${prefix}quotemaker frase/nome/tema\n\nEx :\n${prefix}quotemaker teste/Joao/random`
 					if (args.length < 1) return reply(pref)
 					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=${bg}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -2114,17 +2114,17 @@ const getRegisteredRandomId = () => {
 			        reply(infonomor)
 			        await limitAdd(sender) 
 			        break 
-			   case 'igstalk':
-                    if (isBanned) return reply(mess.only.benned)    
-   					if (!isUser) return reply(mess.only.userB)
-   					if (isLimit(sender)) return reply(limitend(pushname2))
-                        anu = await fetchJson(`https://mhankbarbar.tech/api/stalk?username=${body.slice(9)}&apiKey=${BarBarApi}`, {method: 'get'})
-                     buffer = await getBuffer(anu.Profile_pic)
-                     reply(mess.wait)
-                     hasil = `「 *INSTAGRAM STALKER* 」\n\n• Link: https://www.instagram.com/${anu.Username}\n• Fullname : ${anu.Name}\n• Following : ${anu.Jumlah_Followers}\n• Followers : ${anu.Jumlah_Following}\n• Jumlah Postingan: ${anu.Jumlah_Post}\n• Bio : ${anu.Biodata}`
-                    client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
-                    await limitAdd(sender) 
-                    break 
+			//    case 'igstalk':
+            //         if (isBanned) return reply(mess.only.benned)    
+   			// 		if (!isUser) return reply(mess.only.userB)
+   			// 		if (isLimit(sender)) return reply(limitend(pushname2))
+            //             anu = await fetchJson(`https://mhankbarbar.tech/api/stalk?username=${body.slice(9)}&apiKey=${BarBarApi}`, {method: 'get'})
+            //          buffer = await getBuffer(anu.Profile_pic)
+            //          reply(mess.wait)
+            //          hasil = `「 *INSTAGRAM STALKER* 」\n\n• Link: https://www.instagram.com/${anu.Username}\n• Fullname : ${anu.Name}\n• Following : ${anu.Jumlah_Followers}\n• Followers : ${anu.Jumlah_Following}\n• Jumlah Postingan: ${anu.Jumlah_Post}\n• Bio : ${anu.Biodata}`
+            //         client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
+            //         await limitAdd(sender) 
+            //         break 
 			    case 'mimpi':
 			    if (isBanned) return reply(mess.only.benned)
 			        if (isLimit(sender)) return reply(limitend(pushname2))
@@ -2163,16 +2163,16 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 
-			case 'profiltiktok':
-			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
-			    if (isLimit(sender)) return reply(limitend(pushname2))
-			    reply(mess.wait)
-                    anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/tiktokpp?user=${body.slice(14)}`)
-			        tiktok = await getBuffer(anu.result)
-              client.sendMessage(from, tiktok, image, {quoted: mek})
-			        await limitAdd(sender) 
-			        break 
+			// case 'profiltiktok':
+			//     if (isBanned) return reply(mess.only.benned)    
+			//     if (!isUser) return reply(mess.only.userB)
+			//     if (isLimit(sender)) return reply(limitend(pushname2))
+			//     reply(mess.wait)
+            //         anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/tiktokpp?user=${body.slice(14)}`)
+			//         tiktok = await getBuffer(anu.result)
+            //   client.sendMessage(from, tiktok, image, {quoted: mek})
+			//         await limitAdd(sender) 
+			//         break 
 		    case 'darkjokes':
 				client.updatePresence(from, Presence.composing) 
 				 if (isBanned) return reply(mess.only.benned)    
@@ -2251,22 +2251,22 @@ const getRegisteredRandomId = () => {
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: `${body.slice(5)}`})
 				await limitAdd(sender) 
 				break 
-				case 'url2img':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					tipelist = ['desktop','tablet','mobile']
-					if (args.length < 1) return reply('Que tipo mano?')
-					if (!tipelist.includes(args[0])) return reply('Tipe desktop|tablet|mobile')
-					if (args.length < 2) return reply('Cadê o url mano?')
-					if (!isUrl(args[1])) return reply(mess.error.Iv)
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbar.tech/api/url2image?tipe=${args[0]}&url=${args[1]}&apiKey=${BarBarApi}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					url2img = await getBuffer(anu.result)
-					client.sendMessage(from, url2img, image, {quoted: mek})
-					await limitAdd(sender)
-					break 
+				// case 'url2img':
+				// if (isBanned) return reply(mess.only.benned)    
+				// if (!isUser) return reply(mess.only.userB)
+				// if (isLimit(sender)) return reply(limitend(pushname2))
+				// 	tipelist = ['desktop','tablet','mobile']
+				// 	if (args.length < 1) return reply('Que tipo mano?')
+				// 	if (!tipelist.includes(args[0])) return reply('Tipe desktop|tablet|mobile')
+				// 	if (args.length < 2) return reply('Cadê o url mano?')
+				// 	if (!isUrl(args[1])) return reply(mess.error.Iv)
+				// 	reply(mess.wait)
+				// 	anu = await fetchJson(`https://mhankbarbar.tech/api/url2image?tipe=${args[0]}&url=${args[1]}&apiKey=${BarBarApi}`, {method: 'get'})
+				// 	if (anu.error) return reply(anu.error)
+				// 	url2img = await getBuffer(anu.result)
+				// 	client.sendMessage(from, url2img, image, {quoted: mek})
+				// 	await limitAdd(sender)
+				// 	break 
 			    case 'tagall':
 			    if (isBanned) return reply(mess.only.benned)    
 			    if (!isUser) return reply(mess.only.userB)
@@ -2294,16 +2294,16 @@ const getRegisteredRandomId = () => {
 					}
 					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 TIOCAFE BOT 〙', members_id, true)
 					break
-			    case 'kbbi':
-			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
-			    if (isLimit(sender)) return reply(limitend(pushname2))
-			    reply(mess.wait)
-					if (args.length < 1) return reply('Apa quem quer encontrar mano?')
-					anu = await fetchJson(`https://mnazria.herokuapp.com/api/kbbi?search=${body.slice(6)}`, {method: 'get'})
-					reply('De acordo com Kbbi:\n\n'+anu.result)
-					await limitAdd(sender)
-					break 
+			    // case 'kbbi':
+			    // if (isBanned) return reply(mess.only.benned)    
+			    // if (!isUser) return reply(mess.only.userB)
+			    // if (isLimit(sender)) return reply(limitend(pushname2))
+			    // reply(mess.wait)
+				// 	if (args.length < 1) return reply('quem quer encontrar mano?')
+				// 	anu = await fetchJson(`https://mnazria.herokuapp.com/api/kbbi?search=${body.slice(6)}`, {method: 'get'})
+				// 	reply('De acordo com Kbbi:\n\n'+anu.result)
+				// 	await limitAdd(sender)
+				// 	break 
 					case 'grup':
 					case 'gc':
 					case 'group':

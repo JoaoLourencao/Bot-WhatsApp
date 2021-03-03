@@ -718,7 +718,7 @@ const getRegisteredRandomId = () => {
                     if (!isGroup) return reply(mess.only.group)
                     arg = body.substring(body.indexOf(' ') + 1)
 				    isi = arg.split('/')[0] 
-			        pesan = arg.split('/')[1] 
+			        let pesan = arg.split('/')[1] 
 				    pesan2 = arg.split('/')[2] 
                     costum(pesan, isi, pesan2)
                     await limitAdd(sender) 
@@ -1160,7 +1160,7 @@ const getRegisteredRandomId = () => {
                 case 'repollrt':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
-                     const pesan = body.slice(8)
+                    pesan = body.slice(8)
                       if (pesan.length > 300) return client.sendMessage(from, 'Desculpe, o texto é muito longo, máximo de 300 textos', text, {quoted: mek})
                         var nomor = mek.participant
                        const teks1 = `*[REPORT]*\nNumero : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`

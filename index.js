@@ -72,7 +72,7 @@ prefix = "_"
 name = "~ 𝑀𝑖𝑛𝑑𝒮𝑒𝒯 | 𝐵𝑜𝒯"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
 rmenu = "Olá amigos do MιɳԃSҽT"
-limitt = 200
+limitt = 50
 ban = []
 userpremium = ["5514991122284@s.whatsapp.net"] //ubah nomer kalian
 
@@ -243,7 +243,7 @@ const getRegisteredRandomId = () => {
 			const isAnime = isGroup ? anime.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false 
 			const isOwner = ownerNumber.includes(sender)
-			const antilink = isGroup ? anlink.includes(from) : false
+			// const antilink = isGroup ? anlink.includes(from) : false
 			const isUser = user.includes(sender)
 			const isBanned = ban.includes(sender)
 			const isPrem = userpremium.includes(sender)

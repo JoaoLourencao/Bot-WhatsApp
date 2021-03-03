@@ -51,6 +51,7 @@ const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
 const samih = JSON.parse(fs.readFileSync('./database/json/simi.json'))
 const user = JSON.parse(fs.readFileSync('./database/json/user.json'))
 const bucinrandom = JSON.parse(fs.readFileSync('./database/json/bucin.json'))
+const travarandom = JSON.parse(fs.readFileSync('./database/json/trava.json'))
 const adminNumber = JSON.parse(fs.readFileSync('./database/json/admin.json'))
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
@@ -3216,6 +3217,13 @@ const getRegisteredRandomId = () => {
 						break
                     case 'bucin':
                     case 'quotebucin':
+                    if (isBanned) return reply(mess.only.benned)    
+                    if (!isUser) return reply(mess.only.userB)
+                    hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]
+                    client.sendMessage(from, '"'+hasil+'*', text, {quoted: mek})
+                    await limitAdd(sender)
+            break
+			case 'trava':
                     if (isBanned) return reply(mess.only.benned)    
                     if (!isUser) return reply(mess.only.userB)
                     hasil = bucinrandom[Math.floor(Math.random() * (bucinrandom.length))]

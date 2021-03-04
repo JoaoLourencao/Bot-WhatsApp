@@ -7,7 +7,7 @@ https://www.instagram.com/_joaolourencao/
 
 POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 
-╭───「 *REGULAMENTO ${name}* 」
+╭─「 *REGULAMENTO ${name}* 」
 ┴
 ┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
@@ -19,10 +19,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 ┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
 ┣⊱  \`\`\`Quebra??\`\`\` *Banido*
 ┬
-╰────────────────────────
+╰───────────────
 
 
-╭──────「 *SOBRE ${name}* 」
+╭─「 *SOBRE ${name}* 」
 ┴
 │➻ *${prefix}info*
 │➻ *${prefix}doar* faça uma doação
@@ -36,10 +36,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}premiumlist*
 │➻ *${prefix}idiomas*
 ┬
-╰────────────────────────
+╰───────────────
 
 
-͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOAD* 」
+͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭─「 *MEDIA DOWNLOAD* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
 │➻ *${prefix}fototiktok*
@@ -48,10 +48,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}wait*
 │➻ *${prefix}google Pesquisa*
 ┬
-╰────────────────────────
+╰──────────
 
 
-╭──────「 *CRIADOR MENU* 」
+╭─「 *CRIADOR MENU* 」
 ┴
 │➻ *${prefix}quotemaker texto/nome/tema*
 │➻ *${prefix}textoemfolha nome/titulo/texto*
@@ -72,10 +72,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}tomp3*
 │➻ *${prefix}ocr*
 ┬
-╰──────────────────────────
+╰────────────
 
 
-╭───────「 *GRUPO APENAS* 」
+╭─「 *GRUPO APENAS* 」
 ┴
 │➻ *${prefix}linkgrupo*
 │➻ *${prefix}ownergrup*
@@ -94,9 +94,9 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}grupoprivado on/off*
 │➻ *${prefix}antilink on/off*
 ┬
-╰───────────────────────
+╰───────────
 
-╭────────────────────────
+╭───────────
 ┴
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}naruto*
@@ -118,9 +118,9 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}animekiss*
 │➻ *${prefix}wink*
 ┬
-╰────────────────────────
+╰───────────
 
-╭────────────────────────
+╭───────────
 ┴
 │➻ *${prefix}nsfw On/Off*
 │➻ *${prefix}nsfwloli*
@@ -130,10 +130,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}hentai* ja sabe aqui e foto doida 
 │➻ *${prefix}simih On/Off*
 ┬
-╰────────────────────────
+╰───────────
 
 
-╭──────「 *OUTROS & GAME* 」
+╭─「 *OUTROS & GAME* 」
 ┴
 │➻ *${prefix}bichinhos*
 │➻ *${prefix}trava travazap*
@@ -159,9 +159,9 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}katailham*
 │➻ *${prefix}animewp*
 ┬
-╰────────────────────────
+╰──────────────
 
-╭──────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}jarak Banyuwangi/Surabaya*
 │➻ *${prefix}translate en/Apa kabar?*
@@ -188,39 +188,39 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}infoalamat jalan Banyuwangi*
 │➻ *${prefix}playstore WhatsApp*
 ┬
-╰───────────────────────────
+╰───────────────
 
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}asupan*
 │➻ *${prefix}tebakgambar*
 │➻ *${prefix}caklontong*
 │➻ *${prefix}family100*
-│➻ *${prefix}kalkulator 13*12*
+│➻ *${prefix}calcular 13*12*
 │➻ *${prefix}wp gunung*
 │➻ *${prefix}moddroid lightroom*
 │➻ *${prefix}happymod lightroom*
 ┬
-╰────────────────────────
+╰──────────────
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}cerpen*
 │➻ *${prefix}cersex*
 │➻ *${prefix}xxx japan*
 │➻ *${prefix}pornhub stepMoms* pornozao kkk
 ┬
-╰────────────────────────
+╰──────────────
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}jadwalsholat Banyuwangi*
 │➻ *${prefix}quran*
 │➻ *${prefix}quransurah 1*
 │➻ *${prefix}tafsir kafir*
 ┬
-╰────────────────────────
+╰─────────────
 
 ╭────────────────────────
 ┴

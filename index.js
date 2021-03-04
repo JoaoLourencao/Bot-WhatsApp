@@ -696,7 +696,7 @@ const getRegisteredRandomId = () => {
                 //                           await limitAdd(sender) 
                 //                           break  
                         
-                 case 'kalkulator':
+                 case 'calcular':
 					if (isBanned) return reply(mess.only.benned)    
 				   if (!isUser) return reply(mess.only.userB)
 				   if (isLimit(sender)) return reply(limitend(pushname2))

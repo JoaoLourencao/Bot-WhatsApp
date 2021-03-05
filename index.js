@@ -96,10 +96,10 @@ async function starts() {
 		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
 	})
 
-	fs.existsSync('./MindSetBot.json') && client.loadAuthInfo('./MindSetBot.json')
-	client.on('connecting', () => {
-		start('2', 'Connecting...')
-	})
+	// fs.existsSync('./MindSetBot.json') && client.loadAuthInfo('./MindSetBot.json')
+	// client.on('connecting', () => {
+	// 	start('2', 'Connecting...')
+	// })
 	client.on('open', () => {
 		success('2', 'Connected')
 	})

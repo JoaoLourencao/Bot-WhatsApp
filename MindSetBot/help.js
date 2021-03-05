@@ -222,7 +222,7 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 ┬
 ╰─────────────
 
-╭────────────────────────
+╭────────────
 ┴
 │➻ *${prefix}becrypt string*
 │➻ *${prefix}encode64 string*
@@ -239,16 +239,16 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}tinyurl link*
 │➻ *${prefix}bitly link*
 ┬
-╰────────────────────────
+╰───────────────
 
-╭────────────────────────
+╭─────────────────
 ┴
 │➻ *${prefix}spamgmail lordescreamo@gmail.com*
 ┬
-╰────────────────────────
+╰────────────────
 
 
-╭─────「 *SO PROPRIETARIO* 」
+╭─「 *SO PROPRIETARIO* 」
 ┴
 │➻ *${prefix}addprem mentioned*
 │➻ *${prefix}removeprem mention*
@@ -269,10 +269,10 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}getses*
 │➻ *${prefix}leave*
 ┬
-╰────────────────────────
+╰────────────
 
 
-╭────「 *PREMIUM APENAS* 」
+╭─「 *PREMIUM APENAS* 」
 ┴
 │➻ *${prefix}playmp3 menepi*
 │➻ *${prefix}fb link video*
@@ -282,7 +282,7 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 │➻ *${prefix}joox The Ultimate Monologue*
 │➻ *${prefix}smule Link Video Smule*
 ┬
-╰────────────────────────
+╰──────────────
 `
 }
 

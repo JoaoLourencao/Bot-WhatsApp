@@ -42,7 +42,6 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭─「 *MEDIA DOWNLOAD* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}fototiktok*
 │➻ *${prefix}meme*
 │➻ *${prefix}memeindo*
 │➻ *${prefix}wait*

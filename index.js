@@ -455,7 +455,7 @@ const getRegisteredRandomId = () => {
 					if (asal.length >= 20) return reply('onde fica a área mano?🤔')
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-					return reply(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``)
+					return reply(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Idade]: ${umure} Anos\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}menu\`\`\`\n\`\`\`\nTotal de utilizadores: ${user.length} pessoa(s)\`\`\``)
 					// await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
 					break 
 			case 'owner':

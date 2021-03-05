@@ -192,7 +192,7 @@ const getRegisteredRandomId = () => {
 					ownerG: '*𝙨𝙤𝙢𝙚𝙣𝙩𝙚 𝘼𝘿𝙈 𝙥𝙤𝙙𝙚 𝙪𝙨𝙖𝙧 𝙚𝙨𝙨𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙚𝙢 𝙂𝙧𝙪𝙥𝙤𝙨 !*',
 					ownerB: '*𝘀o 𝗼 𝗱𝗼𝗻𝗼 𝗱𝗼 𝗯𝗼𝘁 𝗽𝗼𝗱𝗲 𝘂𝘀𝗮𝗿 𝗲𝘀𝘀𝗲 𝗰𝗼𝗺𝗮𝗻𝗱𝗼 !* ',
 					premium: '*𝗗𝗘𝗦𝗖𝗨𝗟𝗣𝗘 𝗘𝗦𝗧𝗘 𝗥𝗘𝗖𝗨𝗥𝗦𝗢 𝗣𝗔𝗥𝗔 𝗨𝗦𝗨A𝗥𝗜𝗢 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗘𝗦𝗣𝗘𝗖I𝗙I𝗖𝗢!!*',
-					userB: `𝗢𝗹𝐚 *${pushname2}*, 𝙫𝙤𝙘e 𝙖𝙞𝙣𝙙𝙖 𝙣a𝙤 𝙨𝙚 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙤𝙪  *${name}* \n𝗽𝗮𝗿𝗮 𝘀𝗲 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗿 𝗲𝗻𝘃𝗶𝗲 𝗼𝘀 𝗰𝗼𝗺𝗮𝗻𝗱𝗼𝘀\n\n exemplo ${prefix}ᴅᴀꜰᴛᴀʀ ${pushname2}/17/brasil`,
+					userB: `𝗢𝗹𝐚 *${pushname2}*, 𝙫𝙤𝙘e 𝙖𝙞𝙣𝙙𝙖 𝙣a𝙤 𝙨𝙚 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙤𝙪  *${name}* \n𝗽𝗮𝗿𝗮 𝘀𝗲 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗿 𝗲𝗻𝘃𝗶𝗲 𝗼𝘀 𝗰𝗼𝗺𝗮𝗻𝗱𝗼𝘀\n\n _daftar nome/idade/país\n\n Exemplo: ${prefix}daftar ${pushname2}/17/brasil`,
 					admin: '*sᴏᴍᴇɴᴛᴇ ᴏ ᴀᴅᴍ ᴘᴏᴅᴇ ᴜsᴀʀ ᴇssᴇ ᴄᴏᴍᴀɴᴅᴏ !*',
 					Badmin: '*𝐃𝐄𝐒𝐂𝐔𝐋𝐏𝐄, 𝐄𝐒𝐓𝐄 𝐏𝐄𝐃𝐈𝐃𝐎 𝐒O 𝐏𝐎𝐃𝐄 𝐔𝐒𝐀𝐑 𝐍𝐎𝐒𝐒𝐎𝐒 𝐁𝐎𝐓𝐒 𝐏𝐀𝐑𝐀 𝐒𝐄𝐑 𝐀𝐃𝐌𝐈𝐍𝐒!*'
 				}
@@ -1275,7 +1275,7 @@ const getRegisteredRandomId = () => {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
-						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
+						if (!isNsfw) return reply(' *Ativa o NSFW* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tai safado'})

@@ -2,13 +2,12 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	return `
 	
 
-\`\`\`INSTAGRAM OFFICIAL\`\`\`
+INSTAGRAM
 https://www.instagram.com/_joaolourencao/
 
-\`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
-\`\`\`DE USAR O BOT\`\`\`
+POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 
-╭───「 *REGULAMENTO ${name}* 」
+╭─「 *REGULAMENTO ${name}* 」
 ┴
 ┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
 ┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
@@ -20,10 +19,10 @@ https://www.instagram.com/_joaolourencao/
 ┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
 ┣⊱  \`\`\`Quebra??\`\`\` *Banido*
 ┬
-╰────────────────────────
+╰───────────────
 
 
-╭──────「 *SOBRE ${name}* 」
+╭─「 *SOBRE ${name}* 」
 ┴
 │➻ *${prefix}info*
 │➻ *${prefix}doar* faça uma doação
@@ -37,66 +36,32 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}premiumlist*
 │➻ *${prefix}idiomas*
 ┬
-╰────────────────────────
+╰───────────────
 
 
-͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOAD* 」
+͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭─「 *MEDIA DOWNLOAD* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk _LORDE SCREAMO*
-│➻ *${prefix}insta Link*
-│➻ *${prefix}instastory username*
-│➻ *${prefix}ssweb url*
-│➻ *${prefix}url2img Url*
-│➻ *${prefix}tiktok*
-│➻ *${prefix}fototiktok*
 │➻ *${prefix}meme*
 │➻ *${prefix}memeindo*
-│➻ *${prefix}kbbi*
 │➻ *${prefix}wait*
-│➻ *${prefix}trendtwit*
-│➻ *${prefix}google berita terkini*
+│➻ *${prefix}google Pesquisa*
 ┬
-╰────────────────────────
+╰──────────
 
 
-╭──────「 *CRIADOR MENU* 」
+╭─「 *CRIADOR MENU* 」
 ┴
-│➻ *${prefix}quotemaker tx/wtrmk/tema*
-│➻ *${prefix}nulis nama/kelas/text*
+│➻ *${prefix}quotemaker texto/nome/tema*
+│➻ *${prefix}textoemfolha nome/titulo/texto*
 │➻ *${prefix}rain reply image*
 │➻ *${prefix}trigger reply image*
 │➻ *${prefix}rip reply image*
-│➻ *${prefix}wasted reply image*
-│➻ *${prefix}cphlogo CAFE/BOT*
-│➻ *${prefix}cglitch SCREAMO/BOT*
-│➻ *${prefix}cpubg SCREAMO/BOT*
-│➻ *${prefix}cml SCREAMO*
 │
 │➻ *${prefix}tahta SCREAMO*
-│➻ *${prefix}croman SCREAMO dan BOT*
-│➻ *${prefix}cthunder SCREAMO*
-│➻ *${prefix}cbpink SCREAMO*
-│➻ *${prefix}cmwolf SCREAMO*
-│➻ *${prefix}csky SCREAMO*
-│➻ *${prefix}cwooden SCREAMO*
-│➻ *${prefix}cflower SCREAMO*
-│➻ *${prefix}clove SCREAMO*
-│➻ *${prefix}ccrossfire SCREAMO*
-│➻ *${prefix}cnaruto SCREAMO*
-│➻ *${prefix}cparty SCREAMO*
-│➻ *${prefix}cshadow SCREAMO*
-│➻ *${prefix}cminion SCREAMO*
-│➻ *${prefix}cneon CAFE*
-│➻ *${prefix}cneon2 CAFE*
-│➻ *${prefix}cneongreen CAFE*
-│➻ *${prefix}c3d CAFE*
-│➻ *${prefix}csky CAFE*
-│➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp Screamo*
+│➻ *${prefix}tts Mensagem*
 │➻ *${prefix}cballon Screamo*
 │➻ *${prefix}cpaper Screamo*
-│➻ *${prefix}slide Screamo BOT WA*
 │
 │➻ *${prefix}stiker*
 │➻ *${prefix}gifstiker*
@@ -106,10 +71,31 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}tomp3*
 │➻ *${prefix}ocr*
 ┬
-╰──────────────────────────
+╰────────────
 
 
-╭───────「 *GRUPO APENAS* 」
+╭─「 *GRUPO APENAS* 」
+┴
+│➻ *${prefix}linkgrupo*
+│➻ *${prefix}ownergrup*
+│➻ *${prefix}add*
+│➻ *${prefix}kick*
+│➻ *${prefix}promote*
+│➻ *${prefix}demote*
+│➻ *${prefix}setname* muda nome grupo 
+│➻ *${prefix}setdesc* altera descricao
+│➻ *${prefix}mentionall* menciona membro
+│➻ *${prefix}tagall*
+│➻ *${prefix}listadmin*
+│➻ *${prefix}tagme*
+│➻ *${prefix}hidetag* marcar invisivel
+│➻ *${prefix}welcome On/Off*
+│➻ *${prefix}grupoprivado on/off*
+│➻ *${prefix}antilink on/off*
+┬
+╰───────────
+
+╭───────────
 ┴
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}naruto*
@@ -131,35 +117,9 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}animekiss*
 │➻ *${prefix}wink*
 ┬
-╰───────────────────────
+╰───────────
 
-╭────────────────────────
-┴
-│➻ *${prefix}welcome On/Off*
-│➻ *${prefix}grup buka/tutup*
-│➻ *${prefix}antilink on/off*
-│➻ *${prefix}ownergrup*
-│➻ *${prefix}setpp*
-│➻ *${prefix}infogc*
-│➻ *${prefix}add*
-│➻ *${prefix}kick*
-│➻ *${prefix}promote*
-│➻ *${prefix}demote*
-│➻ *${prefix}setname* muda nome grupo 
-│➻ *${prefix}setdesc* altera descricao
-│➻ *${prefix}linkgrup*
-│➻ *${prefix}tagme*
-│➻ *${prefix}hidetag* marcar invisivel
-│➻ *${prefix}tagall*
-│➻ *${prefix}mentionall* menciona membro
-│➻ *${prefix}fitnah*
-│➻ *${prefix}listadmin*
-│➻ *${prefix}openanime*
-│➻ *${prefix}edotense*
-┬
-╰────────────────────────
-
-╭────────────────────────
+╭───────────
 ┴
 │➻ *${prefix}nsfw On/Off*
 │➻ *${prefix}nsfwloli*
@@ -169,23 +129,20 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}hentai* ja sabe aqui e foto doida 
 │➻ *${prefix}simih On/Off*
 ┬
-╰────────────────────────
+╰───────────
 
 
-╭──────「 *OUTROS & GAME* 」
+╭─「 *OUTROS & GAME* 」
 ┴
-│➻ *${prefix}anjing*
-│➻ *${prefix}kucing*
+│➻ *${prefix}bichinhos*
+│➻ *${prefix}trava travazap*
+│➻ *${prefix}gatinhos*
 │➻ *${prefix}testime*
-│➻ *${prefix}hilih*
-│➻ *${prefix}say*
-│➻ *${prefix}apakah*
-│➻ *${prefix}kapankah*
-│➻ *${prefix}bisakah*
-│➻ *${prefix}rate*
+│➻ *${prefix}pergunta*
+│➻ *${prefix}quantotempo*
+│➻ *${prefix}possofazer*
 │➻ *${prefix}watak*
 │➻ *${prefix}hobby*
-│➻ *${prefix}infogempa*
 │➻ *${prefix}infonomor*
 │➻ *${prefix}quotes*
 │➻ *${prefix}truth*
@@ -201,9 +158,9 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}katailham*
 │➻ *${prefix}animewp*
 ┬
-╰────────────────────────
+╰──────────────
 
-╭──────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}jarak Banyuwangi/Surabaya*
 │➻ *${prefix}translate en/Apa kabar?*
@@ -230,41 +187,41 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}infoalamat jalan Banyuwangi*
 │➻ *${prefix}playstore WhatsApp*
 ┬
-╰───────────────────────────
+╰───────────────
 
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}asupan*
 │➻ *${prefix}tebakgambar*
 │➻ *${prefix}caklontong*
 │➻ *${prefix}family100*
-│➻ *${prefix}kalkulator 13*12*
+│➻ *${prefix}calcular 13*12*
 │➻ *${prefix}wp gunung*
 │➻ *${prefix}moddroid lightroom*
 │➻ *${prefix}happymod lightroom*
 ┬
-╰────────────────────────
+╰──────────────
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}cerpen*
 │➻ *${prefix}cersex*
 │➻ *${prefix}xxx japan*
 │➻ *${prefix}pornhub stepMoms* pornozao kkk
 ┬
-╰────────────────────────
+╰──────────────
 
-╭────────────────────────
+╭──────────────
 ┴
 │➻ *${prefix}jadwalsholat Banyuwangi*
 │➻ *${prefix}quran*
 │➻ *${prefix}quransurah 1*
 │➻ *${prefix}tafsir kafir*
 ┬
-╰────────────────────────
+╰─────────────
 
-╭────────────────────────
+╭────────────
 ┴
 │➻ *${prefix}becrypt string*
 │➻ *${prefix}encode64 string*
@@ -281,18 +238,16 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}tinyurl link*
 │➻ *${prefix}bitly link*
 ┬
-╰────────────────────────
+╰───────────────
 
-╭────────────────────────
+╭─────────────────
 ┴
-│➻ *${prefix}spamcall 083xxxxxxxxx*
-│➻ *${prefix}spamsms 083xxxxxxxx/jumlah*
 │➻ *${prefix}spamgmail lordescreamo@gmail.com*
 ┬
-╰────────────────────────
+╰────────────────
 
 
-╭─────「 *SO PROPRIETARIO* 」
+╭─「 *SO PROPRIETARIO* 」
 ┴
 │➻ *${prefix}addprem mentioned*
 │➻ *${prefix}removeprem mention*
@@ -313,10 +268,10 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}getses*
 │➻ *${prefix}leave*
 ┬
-╰────────────────────────
+╰────────────
 
 
-╭────「 *PREMIUM APENAS* 」
+╭─「 *PREMIUM APENAS* 」
 ┴
 │➻ *${prefix}playmp3 menepi*
 │➻ *${prefix}fb link video*
@@ -326,17 +281,8 @@ https://www.instagram.com/_joaolourencao/
 │➻ *${prefix}joox The Ultimate Monologue*
 │➻ *${prefix}smule Link Video Smule*
 ┬
-╰────────────────────────
-
-
-╭─────「 *CANAIS PARCEIROS${name}* 」
-│
-├➲ *COPIADOR UCHIHA*
-├➲ *MAFIA DOS TUTORS*
-├➲ *PROFESSIONNEL JOKER*
-├➲ *CORTES SCREAMO*
-├➲ *BOT LORDE SCREAMO*
-╰────────────────────────`
+╰──────────────
+`
 }
 
 exports.help = help

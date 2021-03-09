@@ -538,6 +538,7 @@ const getRegisteredRandomId = () => {
 					} else {
 						reply('Só uma foto mano')
 					}
+
 					await limitAdd(sender) 
 					break 
 				case 'gifstiker':

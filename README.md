@@ -34,9 +34,10 @@ Follow The Steps Below!
 (after that tap on permission)
 > pkg update -y
 > pkg upgrade -y
+> pkg install nodejs
 > pkg install git -y
-> git clone https://github.com/Fxc7/termux-bot-wa
-> cd termux-bot-wa
+> git clone https://github.com/JoaoLourencao/Bot-WhatsApp.git
+> cd Bot-WhatsApp
 > npm cache clear
 > bash install.sh
 > npm audit fix

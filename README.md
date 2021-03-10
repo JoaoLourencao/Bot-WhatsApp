@@ -6,7 +6,7 @@
 
 
 <p align="center">
-<a href="https://github.com/JoaoLourencao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-FARHAN-orange?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/JoaoLourencao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-JOAOLOURENCAO-orange?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/JoaoLourencao/Bot-WhatsApp/followers"><img title="Followers" src="https://img.shields.io/github/followers/Fxc7?style=flat-square"></a>

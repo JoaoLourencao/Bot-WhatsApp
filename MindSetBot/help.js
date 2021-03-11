@@ -205,15 +205,6 @@ POR FAVOR, LEIA AS NOTAS ABAIXO ANTES DE USAR O BOT
 
 ╭──────────────
 ┴
-│➻ *${prefix}cerpen*
-│➻ *${prefix}cersex*
-│➻ *${prefix}xxx japan*
-│➻ *${prefix}pornhub stepMoms* pornozao kkk
-┬
-╰──────────────
-
-╭──────────────
-┴
 │➻ *${prefix}jadwalsholat Banyuwangi*
 │➻ *${prefix}quran*
 │➻ *${prefix}quransurah 1*

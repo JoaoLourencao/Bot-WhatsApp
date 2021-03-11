@@ -3,11 +3,9 @@
 <br>
 
 
-
-<p align="center">
-</p>
 <p align="center">
 <a href="https://github.com/JoaoLourencao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-JoaoLourencao-orange?style=for-the-badge&logo=github"></a>
+
 </p>
 
 
@@ -15,9 +13,7 @@
 
 
 
-* [Pix](1499112284)
-</details>
-
+* [Pix](14991122284)
 ## Tools
 
 ```bash
@@ -43,12 +39,6 @@ Follow The Steps Below!
 > npm audit fix
 > npm start / node index.js
 ```
-
-<p align="center">
-<a href="#"><img title="termux-bot-wa" src="https://img.shields.io/badge/-TAMPILAN--MENU-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-
-<br>
-</p>
 
 ## Features
 

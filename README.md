@@ -1,17 +1,10 @@
-### I'm FXC7BOT Gift Me Stars 🌟 <br><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="20px">
-<p align="center">
-<a href="https://github.com/JoaoLourencao"><img src="https://raw.githubusercontent.com/JoaoLourencao/Bot-WhatsApp/main/src/logo.jpg"></a>
-</p>
+### I'm JoaoLourencao 🌟 <br><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="20px">
+
 <br>
 
 
 <p align="center">
-<a href="https://github.com/JoaoLourencao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-JOAOLOURENCAO-orange?style=for-the-badge&logo=github"></a>
-</p>
-<p align="center">
-<a href="https://github.com/JoaoLourencao/Bot-WhatsApp/followers"><img title="Followers" src="https://img.shields.io/github/followers/Fxc7?style=flat-square"></a>
-<a href="https://github.com/JoaoLourencao/Bot-WhatsApp/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fxc7/termux-bot-wa?style=flat-square"></a>
-<a href="https://github.com/JoaoLourencao/Bot-WhatsApp/watchers"><img title="watchers" src="https://img.shields.io/github/watchers/FarhanXCode7/termux-bot-wa?style=flat-square"></a>
+<a href="https://github.com/JoaoLourencao"><img title="Author" src="https://img.shields.io/badge/AUTHOR-JoaoLourencao-orange?style=for-the-badge&logo=github"></a>
 
 </p>
 
@@ -21,14 +14,12 @@
 
 
 * [Pix](14991122284)
-</details>
-
 ## Tools
 
 ```bash
-> Termux
+> Termux App
 > WhatsApp
-> 2 HandPhone
+> 2 HandPhone or 1 Handphone and 1 PC
 ```
 
 ## Install
@@ -39,14 +30,16 @@ Follow The Steps Below!
 (after that tap on permission)
 > pkg update -y
 > pkg upgrade -y
+> pkg install nodejs
 > pkg install git -y
-> git clone https://github.com/Fxc7/termux-bot-wa
-> cd termux-bot-wa
+> git clone https://github.com/JoaoLourencao/Bot-WhatsApp.git
+> cd Bot-WhatsApp
 > npm cache clear
 > bash install.sh
 > npm audit fix
 > npm start / node index.js
 ```
+
 ## Features
 
 | NEW USER | YES
@@ -206,16 +199,9 @@ Follow The Steps Below!
 
 * |En| And You can add your own quotes
 
-
 ## Special Thanks
 
 * [Baileys](https://github.com/baileys)
 * Created Bot => [MhankBarBar](https://github.com/MhankBarBar)
 
 
-
-## Group
-
-* <a href="https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
-
----

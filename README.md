@@ -76,12 +76,6 @@ Follow The Steps Below!
 | Nulis Name/class/text|✅|
 | Quotes|✅|
 
-| ASK | YES |
-| :-----------------: | :-------: |
-| Apakah|✅|
-| Kapankah|✅|
-| Bisakah|✅|
-
 | DOWNLOADER | YES |
 | :-----------------: | :-------: |
 | Pinterest Downloader|✅|
@@ -117,11 +111,6 @@ Follow The Steps Below!
 | :-----------------: | :-------: |
 | Music Lyrics|✅|
 | Chord Guitar|✅|
-
-| ISLAM | YES |
-| :-----------------: | :-------: |
-| Qur'an|✅|
-| Qur'an Surah 1,2,3 dll |✅|
 
 | STALK | YES |
 | :-----------------: | :-------: |
@@ -182,7 +171,6 @@ Follow The Steps Below!
 | :-----------------: | :-------: |
 | Youtube mp3 Download|✅|
 | Youtube mp4 Download|✅|
-| Joox|✅|
 | Facebook Video Download|✅|
 | Snack Video Download|✅|
 | Play Mp3|✅|
